@@ -1,5 +1,3 @@
-import Brands from "@/components/brands";
-import Hero from "@/components/heroSection/hero";
 import HomePage from "./(pages)/home";
 
 const page = () => {
