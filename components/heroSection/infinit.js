@@ -1,4 +1,3 @@
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import Img from "@/public/workers/1.svg";
 import angular from "@/public/developer/angular.svg";
 import js from "@/public/developer/js.svg";
@@ -6,6 +5,7 @@ import laravel from "@/public/developer/laravel.svg";
 import nodejs from "@/public/developer/nodejs.svg";
 import reactNative from "@/public/developer/reactNative.svg";
 import swift from "@/public/developer/swift.svg";
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 const items = [
   {

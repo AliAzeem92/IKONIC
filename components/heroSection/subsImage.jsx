@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import Img from "@/public/SubsImages/1.svg";
 
 const SubsImage = ({ Img }) => {
   return (

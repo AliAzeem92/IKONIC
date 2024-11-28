@@ -1,4 +1,3 @@
-import Navbar from "./navbar";
 import SubsImage from "./subsImage";
 import Sub1 from "@/public/SubsImages/1.svg";
 import Sub2 from "@/public/SubsImages/2.svg";
@@ -10,8 +9,7 @@ import Infinit from "./infinit";
 const Hero = () => {
   return (
     <div className="bg-[#f1f1f1] ">
-      <Navbar />
-      <div className="flex flex-col items-center mt-[53px] sm:t-[100px] mb-[75.5px] ">
+      <div className="flex flex-col items-center pt-[53px] sm:pt-[100px] mb-[75.5px] ">
         <div className="flex bg-[#0314190F] py-[10px] px-[22px] rounded-full items-center text-xs sm:text-base  ">
           <div>
             <span className="font-bold ">200+</span> Developers for you to
@@ -47,13 +45,14 @@ const Hero = () => {
             text="View Our Previous Work"
           />
         </div>
-        <div className="flex flex-col sm:flex-row justify-between w-screen sm:px-[183px] px-8 py-5 ">
+        <div className="flex flex-col sm:flex-row justify-between w-full sm:px-[183px] px-8 sm:py-5 ">
           <HeroServices text="Hire Developers in 24-48 hours" />
           <HeroServices text="Secure and Scalable Solutions" />
           <HeroServices text="Seamless Integration with your Team" />
         </div>
       </div>
       <div>
+        <></>
         <Infinit />
       </div>
     </div>
