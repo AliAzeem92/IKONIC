@@ -37,7 +37,7 @@ const Hero = () => {
             hours, with complete control and peace of mind.
           </h1>
         </div>
-        <div className="flex sm:flex-row flex-col gap-5 ">
+        <div className="flex sm:flex-row flex-col sm:gap-5 ">
           <HeroHoverButton
             className="bg-[#28C3F4] hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 shadow-lg"
             text="Book a consultation call"
@@ -47,15 +47,15 @@ const Hero = () => {
             text="View Our Previous Work"
           />
         </div>
-        {/* <div className="flex justify-between w-screen px-[183px] ">
+        <div className="flex flex-col sm:flex-row justify-between w-screen sm:px-[183px] px-8 py-5 ">
           <HeroServices text="Hire Developers in 24-48 hours" />
           <HeroServices text="Secure and Scalable Solutions" />
           <HeroServices text="Seamless Integration with your Team" />
-        </div> */}
+        </div>
       </div>
-      {/* <div>
+      <div>
         <Infinit />
-      </div> */}
+      </div>
     </div>
   );
 };
