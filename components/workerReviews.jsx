@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Img from "@/public/workers/2.svg";
-import Play from "@/public/icons/playButton.svg";
+import playNow from "@/public/icons/playNow.svg";
+import play from "@/public/icons/playButton.svg";
 import star from "@/public/icons/5star.svg";
 import commas from "@/public/icons/commas.svg";
 import left from "@/public/icons/leftArrow.svg";
@@ -83,10 +84,18 @@ const WorkerReviews = () => {
                   src={review.workerImage}
                   alt={`${review.workerName}'s Image`}
                 />
-                <div className="flex flex-col items-center justify-center bg-[#021318] text-white w-fit p-3 rounded-full mt-3">
-                  PLAY NOW
-                  <div className="flex justify-center bg-[#021318] border-[#12BDF3] border-2 py-3 px-3.5 w-fit rounded-full items-center">
-                    <Image src={Play} alt="Play button" />
+                <div>
+                  <div className="relative">
+                    <Image
+                      src={playNow}
+                      alt="Rotating Fan"
+                      className="rotating-fan mx-auto  size-28"
+                    />
+                    <Image
+                      src={play}
+                      alt="Center Image"
+                      className="w-6 h-7 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+                    />
                   </div>
                 </div>
               </div>

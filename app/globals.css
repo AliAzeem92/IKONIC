@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rotating-fan {
+  animation: rotate-clockwise 7s linear infinite; /* Apply rotation animation */
+}
+
+/* Keyframes for rotation */
+@keyframes rotate-clockwise {
+  from {
+    transform: rotate(0deg); /* Starting position */
+  }
+  to {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}
