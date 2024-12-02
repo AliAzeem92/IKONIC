@@ -5,11 +5,20 @@ import Sub3 from "@/public/SubsImages/3.svg";
 import HeroHoverButton from "./heroHoverButton";
 import HeroServices from "./heroServices";
 import Infinit from "./infinit";
+import heroBgImage from "@/public/heroBgImage.svg";
 
 const Hero = () => {
   return (
     <div className="bg-[#f1f1f1] ">
-      <div className="flex flex-col items-center pt-[53px] sm:pt-[100px] mb-[75.5px] ">
+      <div
+        className="flex flex-col items-center pt-[53px] sm:pt-[100px] mb-[75.5px] "
+        style={{
+          backgroundImage: `url(${heroBgImage.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top",
+        }}
+      >
         <div className="flex bg-[#0314190F] py-[10px] px-[22px] rounded-full items-center text-xs sm:text-base  ">
           <div>
             <span className="font-bold ">200+</span> Developers for you to

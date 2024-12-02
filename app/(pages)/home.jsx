@@ -3,6 +3,7 @@ import Hero from "@/components/heroSection/hero";
 import TalentSection from "@/components/talentSection";
 import Contact from "@/components/contact";
 import Services from "@/components/services";
+import Availability from "@/components/availability";
 
 const HomePage = () => {
   return (
@@ -12,7 +13,8 @@ const HomePage = () => {
       <TalentSection />
       <Contact />
       <Services />
-      <div className="p-10 bg-[red] "></div>
+      <Availability />
+      <div className="p-20 bg-[red] "></div>
     </main>
   );
 };

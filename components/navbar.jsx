@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "@/public/logo.svg";
 import Link from "next/link";
 import DropDown from "./dropDown";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -25,9 +26,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <button className="px-[31.5px] py-[16px] bg-black text-white rounded-lg font-semibold ">
-              Lets Talk...
-            </button>
+            <Button title="Lets Talk.." className="bg-black" />
           </div>
         </div>
       </div>
