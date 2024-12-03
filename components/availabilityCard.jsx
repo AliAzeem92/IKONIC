@@ -15,7 +15,7 @@ const AvailabilityCard = ({
   return (
     <main
       className={`flex flex-col items-center gap-[20px] rounded-2xl ${
-        variant === "default" ? "bg-[#F4F4F4]" : "bg-[#223a49]"
+        variant === "default" ? "bg-[#F4F4F4]" : "bg-[#319cde]"
       }`}
       style={
         variant !== "default"
@@ -26,8 +26,8 @@ const AvailabilityCard = ({
               backgroundPosition: "bottom",
               padding: "5%",
               paddingTop: "5%",
-              border: "2px solid #223a49",
-              borderRadius: "12px",
+              // border: "2px solid #223a49",
+              // borderRadius: "12px",
             }
           : { padding: "5%" }
       }

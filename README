@@ -1,11 +1,182 @@
-// {
-// id: 2,
-// title: "Match Talent",
-// description:
-// "With a highly qualified expert who can guide you through every step of the process",
-// },
-// {
-// id: 3,
-// title: "Start Building",
-// description: "Updates or task completion will be provided within 1-2 days.",
-// },
+// "use clinet";
+// import React, { useState, useRef, useEffect } from "react";
+
+// const PricingSlider = ({ min, max, value, onChange }) => {
+// const [isDragging, setIsDragging] = useState(false);
+// const [currentX, setCurrentX] = useState(0);
+// const [initialX, setInitialX] = useState(0);
+// const [xOffset, setXOffset] = useState(0);
+// const thumbRef = useRef(null);
+// const trackRef = useRef(null);
+
+// useEffect(() => {
+// const position = ((value - min) / (max - min)) \* 100;
+// setXOffset(position);
+// setTranslate(position, thumbRef.current);
+// }, [value, min, max]);
+
+// const dragStart = (e) => {
+// setInitialX(e.clientX - xOffset);
+// setIsDragging(true);
+// };
+
+// const dragEnd = (e) => {
+// setInitialX(currentX);
+// setIsDragging(false);
+// };
+
+// const drag = (e) => {
+// if (isDragging) {
+// e.preventDefault();
+// setCurrentX(e.clientX - initialX);
+// setXOffset(currentX);
+// setTranslate(currentX, thumbRef.current);
+// updateValue(currentX);
+// }
+// };
+
+// const setTranslate = (xPos, el) => {
+// el.style.transform = `translateX(${xPos}%)`;
+// };
+
+// const updateValue = (position) => {
+// const value = (position / trackRef.current.offsetWidth) \* (max - min) + min;
+// onChange(value);
+// };
+
+// const updatePosition = (e) => {
+// const position =
+// ((e.clientX - trackRef.current.getBoundingClientRect().left) /
+// trackRef.current.offsetWidth) \*
+// 100;
+// setXOffset(position);
+// setTranslate(position, thumbRef.current);
+// updateValue(position);
+// };
+
+// return (
+// <div className="slider w-full max-w-lg">
+// <div
+// className="track h-2 bg-gray-300 rounded-full relative"
+// ref={trackRef}
+// onClick={updatePosition}
+// >
+// <div
+// className="thumb absolute h-6 w-6 bg-blue-500 rounded-full -top-2 cursor-pointer"
+// ref={thumbRef}
+// onMouseDown={dragStart}
+// onMouseUp={dragEnd}
+// onMouseMove={drag}
+// style={{ left: `${xOffset}%` }}
+// ></div>
+// </div>
+// <div className="labels text-sm text-gray-500 flex justify-between mt-2">
+// <span>{min}</span>
+// <span>{Math.floor((min + max) / 2)}</span>
+// <span>{max}</span>
+// </div>
+// </div>
+// );
+// };
+
+// export default PricingSlider;
+// import React, { useState, useRef, useEffect } from "react";
+
+// const PricingSlider = ({ min, max, value, onChange, options }) => {
+// const [isDragging, setIsDragging] = useState(false);
+// const [currentX, setCurrentX] = useState(0);
+// const [initialX, setInitialX] = useState(0);
+// const [xOffset, setXOffset] = useState(0);
+// const [selectedOption, setSelectedOption] = useState(null);
+// const thumbRef = useRef(null);
+// const trackRef = useRef(null);
+
+// useEffect(() => {
+// const position = ((value - min) / (max - min)) \* 100;
+// setXOffset(position);
+// setTranslate(position, thumbRef.current);
+// }, [value, min, max]);
+
+// const dragStart = (e) => {
+// setInitialX(e.clientX - xOffset);
+// setIsDragging(true);
+// };
+
+// const dragEnd = (e) => {
+// setInitialX(currentX);
+// setIsDragging(false);
+// };
+
+// const drag = (e) => {
+// if (isDragging) {
+// e.preventDefault();
+// setCurrentX(e.clientX - initialX);
+// setXOffset(currentX);
+// setTranslate(currentX, thumbRef.current);
+// updateValue(currentX);
+// }
+// };
+
+// const setTranslate = (xPos, el) => {
+// el.style.transform = `translateX(${xPos}%)`;
+// };
+
+// const updateValue = (position) => {
+// const value = (position / trackRef.current.offsetWidth) \* (max - min) + min;
+// onChange(value);
+// };
+
+// const updatePosition = (e) => {
+// const position =
+// ((e.clientX - trackRef.current.getBoundingClientRect().left) /
+// trackRef.current.offsetWidth) \*
+// 100;
+// setXOffset(position);
+// setTranslate(position, thumbRef.current);
+// updateValue(position);
+// };
+
+// const handleOptionClick = (option) => {
+// setSelectedOption(option);
+// onChange(option.value);
+// };
+
+// return (
+// <div className="slider w-full max-w-lg">
+// <div
+// className="track h-2 bg-gray-300 rounded-full relative"
+// ref={trackRef}
+// onClick={updatePosition}
+// >
+// <div
+// className="thumb absolute h-6 w-6 bg-blue-500 rounded-full -top-2 cursor-pointer"
+// ref={thumbRef}
+// onMouseDown={dragStart}
+// onMouseUp={dragEnd}
+// onMouseMove={drag}
+// style={{ left: `${xOffset}%` }}
+// ></div>
+// </div>
+// <div className="labels text-sm text-gray-500 flex justify-between mt-2">
+// {options.map((option, index) => (
+// <span
+// key={index}
+// className={`cursor-pointer ${
+//               option.value === value ? "text-blue-500 font-medium" : ""
+//             }`}
+// onClick={() => handleOptionClick(option)}
+// >
+// {option.label}
+// </span>
+// ))}
+// </div>
+// {selectedOption && (
+// <div className="mt-4">
+// <img src={selectedOption.image} alt={selectedOption.label} />
+// </div>
+// )}
+// </div>
+// );
+// };
+
+// export default PricingSlider;

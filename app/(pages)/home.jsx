@@ -4,6 +4,9 @@ import TalentSection from "@/components/talentSection";
 import Contact from "@/components/contact";
 import Services from "@/components/services";
 import Availability from "@/components/availability";
+import SkilledPortfolio from "@/components/skilledPortfolio";
+import Choose from "@/components/choose";
+import Pricing from "@/components/pricing";
 
 const HomePage = () => {
   return (
@@ -14,6 +17,9 @@ const HomePage = () => {
       <Contact />
       <Services />
       <Availability />
+      <SkilledPortfolio />
+      <Choose />
+      <Pricing />
       <div className="p-20 bg-[red] "></div>
     </main>
   );
