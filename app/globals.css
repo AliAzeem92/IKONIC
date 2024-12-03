@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-image: url('/BG.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 1007px;
+}
+
+/* Custom animation for smooth scrolling and instant wrap-around effect */
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move by 50% of the width to make a seamless loop */
+  }
+}
+
+/* Apply the infinite scroll animation with smooth movement */
+.animate-scroll {
+  display: flex;
+  animation: scroll-infinite 8s linear infinite; /* Infinite scroll with smooth speed */
+}
+
+/* Wrapper for the items to be scrolled */
+.animate-scroll-repeat {
+  display: flex;
+}
+
+/* Add width to prevent the blank space issue */
+.animate-scroll-repeat {
+  width: max-content;
+}
+
+/* Optional: Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+/* Optionally adjust scroll speed dynamically */
+@media (max-width: 640px) {
+  .animate-scroll {
+    animation-duration: 40s; /* Adjust speed for smaller screens */
+  }
+}
