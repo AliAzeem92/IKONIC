@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="flex w-full px-5 sm:px-[50px] pt-[20px] bg-[#f1f1f1] ">
+    <div className="flex w-full px-5 sm:px-[50px] pt-[20px]">
       <div className="flex justify-between w-full p-4 sm:px-[30px] sm:py-[16px] bg-white rounded-lg items-center ">
         <div>
           <Link href="/">

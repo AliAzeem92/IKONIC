@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "./Button";
-import bg from "@/public/bg.svg";
+import bg from "@/public/BG.svg";
 
 const AvailabilityCard = ({
   Img,
