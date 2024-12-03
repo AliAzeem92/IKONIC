@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 body {
   background-image: url('/BG.png');
   background-position: top;
@@ -51,5 +52,18 @@ body {
 @media (max-width: 640px) {
   .animate-scroll {
     animation-duration: 40s; /* Adjust speed for smaller screens */
+=======
+.rotating-fan {
+  animation: rotate-clockwise 7s linear infinite; /* Apply rotation animation */
+}
+
+/* Keyframes for rotation */
+@keyframes rotate-clockwise {
+  from {
+    transform: rotate(0deg); /* Starting position */
+  }
+  to {
+    transform: rotate(360deg); /* Full rotation */
+>>>>>>> 1e0b355ccb17783507e3579f6171515dd2f53a86
   }
 }

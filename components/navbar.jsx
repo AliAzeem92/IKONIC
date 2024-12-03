@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import Image from 'next/image';
 import Logo from '@/public/logo.svg';
 import Link from 'next/link';
 import DropDown from './dropDown';
+=======
+import Image from "next/image";
+import Logo from "@/public/logo.svg";
+import Link from "next/link";
+import DropDown from "./dropDown";
+import Button from "./Button";
+>>>>>>> 1e0b355ccb17783507e3579f6171515dd2f53a86
 
 const Navbar = () => {
   return (
@@ -25,9 +33,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <button className="px-[31.5px] py-[16px] bg-black text-white rounded-lg font-semibold ">
-              Lets Talk...
-            </button>
+            <Button title="Lets Talk.." className="bg-black" />
           </div>
         </div>
       </div>
