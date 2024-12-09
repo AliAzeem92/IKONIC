@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Button from "./Button";
-import bg from "@/public/BG.svg";
+import Image from 'next/image';
+import Button from './Button';
+import bg from '@/public/bg.svg';
 
 const AvailabilityCard = ({
   Img,
   heading,
   description,
-  variant = "default",
+  variant = 'default',
   whatsapp,
   telegram,
   heading2,
@@ -15,24 +15,24 @@ const AvailabilityCard = ({
   return (
     <main
       className={`flex flex-col items-center gap-[20px] rounded-2xl ${
-        variant === "default" ? "bg-[#F4F4F4]" : "bg-[#319cde]"
+        variant === 'default' ? 'bg-[#F4F4F4]' : 'bg-[#319cde]'
       }`}
       style={
-        variant !== "default"
+        variant !== 'default'
           ? {
               backgroundImage: `url(${bg.src})`,
-              backgroundSize: "500px 150px",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "bottom",
-              padding: "5%",
-              paddingTop: "5%",
+              backgroundSize: '500px 150px',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'bottom',
+              padding: '5%',
+              paddingTop: '5%',
               // border: "2px solid #223a49",
               // borderRadius: "12px",
             }
-          : { padding: "5%" }
+          : { padding: '5%' }
       }
     >
-      {variant === "default" ? (
+      {variant === 'default' ? (
         <>
           <h1 className="text-lg font-semibold">{heading}</h1>
           <p>{description}</p>
