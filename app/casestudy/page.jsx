@@ -1,15 +1,16 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import CardSection from '@/components/cards';
-import cardsData from '@/components/ui/cardsData';
-import ScrollingBanner from '@/components/languageBanner';
-import { items, newBannerItems } from '@/components/ui/bannerData';
-import UserReviews from '@/components/userreviews';
+"use client";
+import React, { useEffect, useState } from "react";
+import CardSection from "@/components/cards";
+import cardsData from "@/components/ui/cardsData";
+import ScrollingBanner from "@/components/languageBanner";
+import { items, newBannerItems } from "@/components/ui/bannerData";
+import UserReviews from "@/components/userreviews";
 
 const page = () => {
   const [banners, setBanners] = useState([]);
   const [newBanners, setNewBanners] = useState([]);
 
+  // Simulate fetching data
   // Simulate fetching data
   useEffect(() => {
     const fetchData = async () => {
