@@ -22,7 +22,7 @@ const SkilledPortfolio = () => {
         <div className="hidden sm:block ">
           <HeroHoverButton
             text="See More Case Studies"
-            className="bg-[#28C3F4] hover:bg-black hover:text-white text-black hover:scale-105 transition-all duration-300 shadow-lg"
+            className="bg-[#28C3F4] hover:bg-black hover:text-white text-black transition-all duration-300 shadow-lg"
           />
         </div>
       </div>

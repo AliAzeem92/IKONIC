@@ -46,11 +46,11 @@ const Hero = () => {
         </div>
         <div className="flex sm:flex-row flex-col sm:gap-5 ">
           <HeroHoverButton
-            className="bg-[#28C3F4] hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 shadow-lg"
+            className="bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg"
             text="Book a consultation call"
           />
           <HeroHoverButton
-            className="hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 shadow-lg border-black border-2 "
+            className="hover:bg-black hover:text-white transition-all duration-300 shadow-lg border-black border-2 "
             text="View Our Previous Work"
           />
         </div>

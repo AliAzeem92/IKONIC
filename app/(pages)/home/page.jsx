@@ -7,6 +7,9 @@ import Availability from "@/components/availability";
 import SkilledPortfolio from "@/components/skilledPortfolio";
 import Choose from "@/components/choose";
 import Pricing from "@/components/pricing";
+import UserReviews from "@/components/userreviews";
+import FAQ from "@/components/faqsection";
+import Blog from "@/components/blog";
 
 const HomePage = () => {
   return (
@@ -18,9 +21,13 @@ const HomePage = () => {
       <Services />
       <Availability />
       <SkilledPortfolio />
-      <Choose />
+      {/* <Choose /> */}
       <Pricing />
-      <div className="p-20 bg-[red] "></div>
+      <UserReviews />
+      <FAQ />
+      <span className="lg:block hidden ">
+        <Blog />
+      </span>
     </main>
   );
 };

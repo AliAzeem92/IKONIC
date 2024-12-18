@@ -5,7 +5,7 @@ import focused from "@/public/icons/focused.svg";
 import teamMassage from "@/public/icons/teamMassage.svg";
 import taskProgress from "@/public/icons/taskProgress.svg";
 import personalizedProject from "@/public/icons/personalizedProject.svg";
-import skillGroup from "@/public/icons/skillGroup.svg";
+import SwiftCommunicationChannels from "@/public/icons/SwiftCommunicationChannels.svg";
 import dataProtect from "@/public/icons/dataProtect.svg";
 import priceTag from "@/public/icons/priceTag.svg";
 import HeroHoverButton from "./heroSection/heroHoverButton";
@@ -33,7 +33,12 @@ const items = [
     alt: personalizedProject,
     text: "Personalized Project Management",
   },
-  { id: 7, src: skillGroup, alt: skillGroup, text: "Skill Group" },
+  {
+    id: 7,
+    src: SwiftCommunicationChannels,
+    alt: SwiftCommunicationChannels,
+    text: "Swift Communication Channels",
+  },
   { id: 8, src: dataProtect, alt: dataProtect, text: "Robust Data Protection" },
   { id: 9, src: priceTag, alt: priceTag, text: "Transparent Pricing" },
   { id: 10, src: focused, alt: focused, text: "Focused on Efficiency" },
@@ -42,35 +47,37 @@ const items = [
 const PricingSlider = () => {
   return (
     <div className="bg-[#FFFFFF] text-black p-[5%] rounded-xl w-full">
-      <div className="flex w-full justify-between">
-        <div className="w-[70%]">
-          <h1 className="text-5xl font-semibold mb-6">All Inclusive</h1>
-          <p className="text-lg">
+      <div className="flex sm:flex-row flex-col-reverse w-full justify-between ">
+        <div className="sm:w-[70%] ">
+          <h1 className="sm:text-5xl text-xl font-semibold sm:mb-6 mb-3 ">
+            All Inclusive
+          </h1>
+          <p className="sm:text-lg text-sm ">
             Our pricing is designed to fit your project needs—whether you need
             one developer or an entire team. Enjoy complete flexibility.
           </p>
         </div>
-        <div className="flex flex-col items-center mt-3">
-          <h4 className="font-semibold mb-2">Subscribing 3 Devs</h4>
+        <div className="flex flex-col sm:items-center mt-3 mb-6 ">
+          <h4 className="font-semibold text-xs sm:text-base mb-2 sm:text-black text-[#858C8E] ">
+            Subscribing 3 Devs
+          </h4>
           <h1 className="text-5xl font-semibold ">$2,999</h1>
         </div>
       </div>
 
-      <div className="flex w-full justify-between">
-        {/* Grid Layout */}
+      <div className="sm:flex w-full justify-between">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
           {items.map((item) => (
             <div key={item.id} className="flex gap-3">
-              <Image src={item.src} alt={item.alt} width={40} height={40} />
-              <p className="text-lg">{item.text}</p>
+              <Image src={item.src} alt={item.alt} />
+              <p className="sm:text-lg text-sm ">{item.text}</p>
             </div>
           ))}
         </div>
 
-        {/* "Subscribing 3 Devs" Section */}
         <div className="flex flex-col items-center mt-6">
           <HeroHoverButton
-            className="bg-[#28C3F4] hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto"
+            className="bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg w-full sm:w-auto"
             text="Get Our Services"
           />
           <div className="flex gap-5 items-center ">

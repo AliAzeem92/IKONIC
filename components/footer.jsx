@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BeforeFooter from "./beforeFooter";
 
-const footer = () => {
+const Footer = () => {
   return (
     <div className="hidden md:block">
       <BeforeFooter />
@@ -117,4 +117,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

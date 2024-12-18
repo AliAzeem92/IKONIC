@@ -1,8 +1,8 @@
-import React from 'react';
-import BeforeFooter from './beforeFooter';
-import Image from 'next/image';
+import React from "react";
+import BeforeFooter from "./beforeFooter";
+import Image from "next/image";
 
-const mobileFooter = () => {
+const MobileFooter = () => {
   return (
     <div className="block md:hidden">
       <BeforeFooter />
@@ -107,4 +107,4 @@ const mobileFooter = () => {
   );
 };
 
-export default mobileFooter;
+export default MobileFooter;
