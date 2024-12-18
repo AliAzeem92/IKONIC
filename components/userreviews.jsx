@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function UserReviews() {
@@ -65,12 +66,12 @@ export default function UserReviews() {
   };
 
   return (
-    <div className="w-[1240px] mx-auto">
+    <div className="w-full md:max-w-[1240px] mx-auto p-5 md:p-0">
       <div className="mt-36">
-        <h2 className="text-5xl font-medium text-[#021318] leading-[57.6px] w-[630px]">
+        <h2 className="text-5xl text-center font-medium text-[#021318] leading-[57.6px] mx-auto md:w-[630px]">
           Trusted by Over 200+ Clients Worldwide
         </h2>
-        <p className="text-xl mt-8 font-medium text-[#021318CC]">
+        <p className="text-xl text-center mt-8 font-medium text-[#021318CC]">
           People who chose us, and never looked back!
         </p>
       </div>
@@ -95,7 +96,9 @@ export default function UserReviews() {
                 className="flex-shrink-0 flex flex-col items-center relative"
                 style={{ width: `${100 / itemsPerSlide}%` }}
               >
-                <img
+                <Image
+                  width={100000000}
+                  height={100000000}
                   src={review.img}
                   alt={`User ${review.id}`}
                   className="w-56 object-cover"

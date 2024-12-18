@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import React, { useEffect, useState } from "react";
 import CardSection from "@/components/cards";
@@ -5,6 +6,18 @@ import cardsData from "@/components/ui/cardsData";
 import ScrollingBanner from "@/components/languageBanner";
 import { items, newBannerItems } from "@/components/ui/bannerData";
 import UserReviews from "@/components/userreviews";
+=======
+'use client';
+import React, { useEffect, useState } from 'react';
+import CardSection from '@/components/cards';
+import cardsData from '@/components/ui/cardsData';
+import ScrollingBanner from '@/components/languageBanner';
+import { items, newBannerItems } from '@/components/ui/bannerData';
+import UserReviews from '@/components/userreviews';
+import FAQ from '@/components/faqsection';
+import Footer from '@/components/footer';
+import MobileFooter from '@/components/mobileFooter';
+>>>>>>> dd9f7c45503fd4ebd4ba5f9a921b0244578eb15a
 
 const page = () => {
   const [banners, setBanners] = useState([]);
@@ -28,14 +41,14 @@ const page = () => {
   }, []);
   return (
     <main className="overflow-hidden">
-      <div className="container mt-[75px]">
+      <div className="w-full md:max-w-[1240px] mx-auto mt-[75px] p-5 md:p-0">
         <h6 className="text-base font-normal bg-[#ebecec] h-10 text-center mx-auto w-[129px] pt-[6px] rounded-full">
           Case studies
         </h6>
-        <h2 className="text-[64px] text-center font-medium leading-[76.8px] w-[520px] mx-auto">
+        <h2 className="text-[40px] md:text-[64px] text-center font-medium leading-[48px] md:leading-[76.8px] md:w-[520px] mx-auto mt-5 md:mt-0">
           Some Of The Work We've Done
         </h2>
-        <p className="text-xl font-normal text-center w-[688px] mx-auto mt-3">
+        <p className="text-lg md:text-xl font-normal text-center md:w-[688px] mx-auto mt-3">
           We've already helped a lot of companies by providing online solutions.
           Take a look at some of our success stories!
         </p>
@@ -60,6 +73,9 @@ const page = () => {
         />
       ))}
       <UserReviews />
+      <FAQ />
+      <Footer />
+      <MobileFooter />
     </main>
   );
 };
