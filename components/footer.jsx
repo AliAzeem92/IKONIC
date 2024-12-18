@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import BeforeFooter from './beforeFooter';
+import Image from "next/image";
+import BeforeFooter from "./beforeFooter";
 
 const footer = () => {
   return (
@@ -104,6 +104,7 @@ const footer = () => {
               Back to the top
               <Image
                 src="/arrow-up.svg"
+                alt="arrow"
                 width={10000000}
                 height={10000000}
                 className="w-5"

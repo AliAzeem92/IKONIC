@@ -1,4 +1,12 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
+// "use client";
+// import React, { useEffect, useState } from "react";
+// import CardSection from "@/components/cards";
+// import cardsData from "@/components/ui/cardsData";
+// import ScrollingBanner from "@/components/languageBanner";
+// import { items, newBannerItems } from "@/components/ui/bannerData";
+// import UserReviews from "@/components/userreviews";
+// =======
 "use client";
 import React, { useEffect, useState } from "react";
 import CardSection from "@/components/cards";
@@ -6,18 +14,10 @@ import cardsData from "@/components/ui/cardsData";
 import ScrollingBanner from "@/components/languageBanner";
 import { items, newBannerItems } from "@/components/ui/bannerData";
 import UserReviews from "@/components/userreviews";
-=======
-'use client';
-import React, { useEffect, useState } from 'react';
-import CardSection from '@/components/cards';
-import cardsData from '@/components/ui/cardsData';
-import ScrollingBanner from '@/components/languageBanner';
-import { items, newBannerItems } from '@/components/ui/bannerData';
-import UserReviews from '@/components/userreviews';
-import FAQ from '@/components/faqsection';
-import Footer from '@/components/footer';
-import MobileFooter from '@/components/mobileFooter';
->>>>>>> dd9f7c45503fd4ebd4ba5f9a921b0244578eb15a
+import FAQ from "@/components/faqsection";
+import Footer from "@/components/footer";
+import MobileFooter from "@/components/mobileFooter";
+// >>>>>>> dd9f7c45503fd4ebd4ba5f9a921b0244578eb15a
 
 const page = () => {
   const [banners, setBanners] = useState([]);
