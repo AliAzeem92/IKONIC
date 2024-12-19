@@ -9,7 +9,7 @@ const CardSection = ({
 }) => {
   return (
     <div className={`w-full mx-auto ${className}`}>
-      <div className="grid gap-8 md:grid-cols-3 py-12 mb-24">
+      <div className="grid gap-8 md:grid-cols-3 ">
         {cards.map((card) => (
           <div key={card.id} className="overflow-hidden rounded-xl group">
             <div className="overflow-hidden rounded-2xl">

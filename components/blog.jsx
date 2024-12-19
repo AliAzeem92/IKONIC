@@ -51,11 +51,11 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex justify-between gap-5 ">
         {blogPosts.map((post, index) => (
           <div key={index}>
-            <Image src={post.src} alt={post.alt} />
-            <div className="flex flex-col gap- mt-5 ">
+            <Image src={post.src} alt={post.alt} className="w-full " />
+            <div className="flex flex-col mt-5 ">
               <h6 className="w-[90%] font-semibold text-xl ">{post.title}</h6>
               <p className="text-[gray] ">{post.readTime}</p>
             </div>

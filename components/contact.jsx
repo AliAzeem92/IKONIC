@@ -12,7 +12,7 @@ const Contact = () => {
             <br />
             Talent to Your Team Seamlessly
           </h1>
-          <p className="sm:text-2xl text-lg sm:font-light px-3 ">
+          <p className="sm:text-xl text-lg px-3 ">
             We help you identify, onboard, and integrate skilled professionals
             to
             <br />

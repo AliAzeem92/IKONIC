@@ -82,24 +82,6 @@ const Pricing = () => {
           </div>
         ))}
       </div>
-      {/* <div className="-mb-[17%] sm:mt-9 mt-5 ">
-        {banners.map((banner, index) => (
-          <ScrollingBanner
-            key={index}
-            bgColor={banner.bgColor}
-            items={banner.languages}
-            rotate={banner.rotate}
-          />
-        ))}
-        {newBanners.map((banner, index) => (
-          <ScrollingBanner
-            key={`new-${index}`}
-            bgColor={banner.bgColor}
-            items={banner.languages}
-            rotate={banner.rotate}
-          />
-        ))}
-      </div> */}
     </main>
   );
 };

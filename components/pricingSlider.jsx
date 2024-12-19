@@ -65,7 +65,7 @@ const PricingSlider = () => {
         </div>
       </div>
 
-      <div className="sm:flex w-full justify-between">
+      <div className="lg:flex w-full justify-between">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
           {items.map((item) => (
             <div key={item.id} className="flex gap-3">
