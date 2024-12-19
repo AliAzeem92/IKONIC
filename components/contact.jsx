@@ -24,7 +24,7 @@ const Contact = () => {
           <ContactCard />
           <ContactCard />
         </div>
-        <div>
+        <div className="flex justify-center ">
           <WorkerReviews />
         </div>
       </div>

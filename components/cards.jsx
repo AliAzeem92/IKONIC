@@ -1,9 +1,15 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-const CardSection = ({ cards = [] }) => {
+const CardSection = ({
+  cards = [],
+  className,
+  titleColor = "text-gray-800",
+  descriptionColor = "text-gray-600",
+  textSize = "text-lg",
+}) => {
   return (
-    <div className="w-full md:max-w-[1240px] mx-auto">
-      <div className="grid gap-8 md:grid-cols-3 px-6 py-12 mb-24">
+    <div className={`w-full mx-auto ${className}`}>
+      <div className="grid gap-8 md:grid-cols-3 py-12 mb-24">
         {cards.map((card) => (
           <div key={card.id} className="overflow-hidden rounded-xl group">
             <div className="overflow-hidden rounded-2xl">
@@ -26,10 +32,12 @@ const CardSection = ({ cards = [] }) => {
                   </span>
                 ))}
               </div>
-              <h3 className="font-medium text-2xl text-gray-800 mb-2 mt-4">
+              <h3 className={`font-medium text-2xl mb-2 mt-4 ${titleColor}`}>
                 {card.title}
               </h3>
-              <p className="text-lg text-gray-600 mt-4">{card.description}</p>
+              <p className={`${textSize} mt-4 ${descriptionColor}`}>
+                {card.description}
+              </p>
             </div>
           </div>
         ))}

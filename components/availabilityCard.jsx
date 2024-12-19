@@ -11,21 +11,24 @@ const AvailabilityCard = ({
   telegram,
   heading2,
   button,
+  className,
 }) => {
   return (
     <main
       className={`flex flex-col items-center gap-[20px] rounded-2xl ${
-        variant === "default" ? "bg-[#F4F4F4]" : "bg-[#319cde]"
+        variant === "default"
+          ? "bg-[#F4F4F4]"
+          : "bg-[#021318] hover:bg-[#0b232a] hover:scale-[101%] "
       }`}
       style={
         variant !== "default"
           ? {
-              backgroundImage: `url(${bg.src})`,
-              backgroundSize: "500px 150px",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "bottom",
-              padding: "5%",
-              paddingTop: "5%",
+              // backgroundImage: `url(${bg.src})`,
+              // backgroundSize: "500px 150px",
+              // backgroundRepeat: "no-repeat",
+              // backgroundPosition: "bottom",
+              // padding: "5%",
+              // paddingTop: "5%",
               // border: "2px solid #223a49",
               // borderRadius: "12px",
             }
@@ -39,7 +42,7 @@ const AvailabilityCard = ({
           <Image src={Img} alt={`Image for ${heading}`} className="mb-[20px]" />
         </>
       ) : (
-        <div className="flex flex-col text-white gap-16">
+        <div className={`flex flex-col text-white gap-16 p-6 ${className} `}>
           <div className="flex flex-col justify-between gap-6">
             <h2 className="text-3xl font-semibold">
               {heading}
@@ -52,7 +55,7 @@ const AvailabilityCard = ({
                 className="bg-[#28C3F4] hover:bg-[#1CAFE0]"
               />
             )}
-            <div className="flex gap-10">
+            <div className="flex justify-center items-center md:flex-row flex-col md:gap-10 gap-5 ">
               {whatsapp && (
                 <div className="flex items-center gap-3">
                   <Image
@@ -78,7 +81,7 @@ const AvailabilityCard = ({
             </div>
           </div>
           {description && (
-            <p className="text-sm text-center mt-6">{description}</p>
+            <p className="text-sm text-center md:mt-10 ">{description}</p>
           )}
         </div>
       )}

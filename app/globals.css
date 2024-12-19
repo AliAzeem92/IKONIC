@@ -47,16 +47,6 @@ body {
   display: none; /* Chrome, Safari, and Opera */
 }
 
-/* Optionally adjust scroll speed dynamically */
-@media (max-width: 640px) {
-  .animate-scroll {
-    animation-duration: 40s; /* Adjust speed for smaller screens */
-  }
-  .rotating-fan {
-    animation: rotate-clockwise 7s linear infinite; /* Apply rotation animation */
-  }
-}
-
 /* Keyframes for rotation */
 @keyframes rotate-clockwise {
   from {
@@ -64,5 +54,17 @@ body {
   }
   to {
     transform: rotate(360deg); /* Full rotation */
+  }
+}
+
+/* Apply the rotating-fan animation globally */
+.rotating-fan {
+  animation: rotate-clockwise 7s linear infinite; /* Apply rotation animation */
+}
+
+/* Optionally adjust scroll speed dynamically */
+@media (max-width: 640px) {
+  .animate-scroll {
+    animation-duration: 40s; /* Adjust speed for smaller screens */
   }
 }

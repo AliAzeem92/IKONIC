@@ -3,12 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import Img from "@/public/workers/2.svg";
-import playNow from "@/public/icons/playNow.svg";
-import play from "@/public/icons/playButton.svg";
 import star from "@/public/icons/5star.svg";
 import commas from "@/public/icons/commas.svg";
 import left from "@/public/icons/leftArrow.svg";
 import right from "@/public/icons/rightArrow.svg";
+import WorkerReviewsImg from "./workerReviewsImg";
 
 const reviews = [
   {
@@ -56,17 +55,17 @@ const WorkerReviews = () => {
   return (
     <main className="p-10 flex flex-col ">
       {/* Navigation Buttons */}
-      <div className="flex gap-10 items-end mb-5 ">
-        <button onClick={goToPrevReview}>
-          <Image src={left} alt="Left arrow" />
-        </button>
+      <div className="flex flex-row-reverse gap-10 mb-5 ">
         <button onClick={goToNextReview}>
           <Image src={right} alt="Right arrow" />
+        </button>
+        <button onClick={goToPrevReview}>
+          <Image src={left} alt="Left arrow" />
         </button>
       </div>
 
       {/* Sliding Reviews */}
-      <div className="relative w-full overflow-hidden max-w-4xl">
+      <div className="relative overflow-hidden sm:max-w-4xl max-w-96   ">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -76,33 +75,14 @@ const WorkerReviews = () => {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="flex flex-none w-full gap-10 p-5 bg-cover bg-center"
+              className="flex flex-none w-full gap-24 p-5 bg-cover bg-center"
             >
               {/* Worker Image and Play Button */}
-              <div className="flex-shrink-0">
-                <Image
-                  src={review.workerImage}
-                  alt={`${review.workerName}'s Image`}
-                />
-                <div>
-                  <div className="relative">
-                    <Image
-                      src={playNow}
-                      alt="Rotating Fan"
-                      className="rotating-fan mx-auto  size-28"
-                    />
-                    <Image
-                      src={play}
-                      alt="Center Image"
-                      className="w-6 h-7 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
-                    />
-                  </div>
-                </div>
-              </div>
+              <WorkerReviewsImg className="lg:block hidden " />
 
               {/* Review Content */}
               <div
-                className="ml-5 flex flex-col justify-center"
+                className="ml-5 flex flex-col justify-center relative -top-5 "
                 style={{
                   backgroundImage: `url(${commas.src})`,
                   backgroundSize: "100px",
@@ -110,10 +90,18 @@ const WorkerReviews = () => {
                   backgroundPosition: "top left",
                 }}
               >
-                <h1 className="text-3xl mb-5">{`"${review.reviewText}"`}</h1>
-                <Image src={review.ratingImage} alt="Star" className="mb-3" />
-                <h4 className="font-semibold">{review.workerName}</h4>
-                <p className="text-[#999999] font-light">{review.workerRole}</p>
+                <h1 className="sm:text-2xl text-lg font-semibold lg:mb-3">{`"${review.reviewText}"`}</h1>
+                <div className="flex lg:flex-none flex-col-reverse lg:flex-col items-center lg:items-start ">
+                  <Image src={review.ratingImage} alt="Star" className="mb-2" />
+                  <p className="text-[#999999] block lg:hidden ">
+                    {review.workerRole}
+                  </p>
+                  <h4 className="font-semibold">{review.workerName}</h4>
+                  <p className="text-[#999999] lg:block hidden ">
+                    {review.workerRole}
+                  </p>
+                  <WorkerReviewsImg className="block lg:hidden " />
+                </div>
               </div>
             </div>
           ))}

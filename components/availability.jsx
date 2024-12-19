@@ -48,15 +48,27 @@ const Availability = () => {
           variant="alternate"
           heading="Schedule A Free"
           heading2="Discovery Call"
-          button="Lets Talk..."
+          button="Let's Talk..."
           whatsapp={whatsapp}
           telegram={telegram}
           description="A 20-min discovery call to discuss your project."
+          className="sm:block hidden"
         />
+
         <AvailabilityCard
           heading="Scalable Workforce"
           description="Quickly adjust your team size with our scalable workforce, ensuring you always have the resources you need."
           Img={workforce}
+        />
+        <AvailabilityCard
+          variant="alternate"
+          heading="Schedule A Free"
+          heading2="Discovery Call"
+          button="Lets Talk..."
+          whatsapp={whatsapp}
+          telegram={telegram}
+          description="A 20-min discovery call to discuss your project."
+          className="block sm:hidden "
         />
       </div>
     </main>

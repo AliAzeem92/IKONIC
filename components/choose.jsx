@@ -3,13 +3,12 @@ import star from "@/public/icons/star.svg";
 import line from "@/public/icons/curlyLine.svg";
 import skillGroup from "@/public/icons/skillGroup.svg";
 import arrow from "@/public/icons/openLink.svg";
-import tickedWhite from "@/public/icons/tickedWhite.svg";
-import cross from "@/public/icons/cross.svg";
-import Logo from "@/public/whiteLogo.svg";
+import ChooseTable from "./chooseTable";
+import ComparisonTable from "./chooseTable";
 
 const Choose = () => {
   return (
-    <main className="flex flex-col w-[100%] items-center px-5 pt-5  ">
+    <main className="flex flex-col w-full items-center px-5 pt-5  ">
       <div className="bg-[#F7F7F9] p-[3%] w-full rounded-xl  ">
         <div className="flex sm:flex-row flex-col-reverse sm:gap-28 gap-10 pt-4 ">
           <div className="relative">
@@ -48,7 +47,10 @@ const Choose = () => {
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-center py-[7%] ">
+      {/* <ChooseTable /> */}
+      <ComparisonTable />
+
+      {/* <div className="flex flex-col w-full items-center py-[7%] ">
         <div>
           <h1 className="text-5xl font-semibold ">Why Choose IKONIC?</h1>
         </div>
@@ -151,7 +153,7 @@ const Choose = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 };

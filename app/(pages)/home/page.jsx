@@ -21,7 +21,7 @@ const HomePage = () => {
       <Services />
       <Availability />
       <SkilledPortfolio />
-      {/* <Choose /> */}
+      <Choose />
       <Pricing />
       <UserReviews />
       <FAQ />

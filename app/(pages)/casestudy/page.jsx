@@ -40,7 +40,7 @@ const Page = () => {
           solutions. Take a look at some of our success stories!
         </p>
       </div>
-      <CardSection cards={cardsData} />
+      <CardSection cards={cardsData} className=" md:max-w-[1240px]" />
       {/* Render first set of banners */}
       {banners.map((banner, index) => (
         <ScrollingBanner
