@@ -6,7 +6,9 @@ const HeroHoverButton = ({ className, text }) => {
     <div
       className={`flex items-center justify-center gap-5 px-[41.5px] py-[19.5px] rounded sm:my-[42px] my-[10px] group ${className}`}
     >
-      <button className="text-center text-lg sm:text-3xl w-full">{text}</button>
+      <button className="text-center text-lg md:text-xl 2xl:text-3xl w-full">
+        {text}
+      </button>
       <Image
         src={Img}
         alt="Went to Link"

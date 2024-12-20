@@ -52,7 +52,7 @@ const Pricing = () => {
       </div>
       <div className="flex mb-[3%]">
         {data.map((item, index) => (
-          <div key={index} className="flex items-center w-full">
+          <div key={index} className="flex items-center lg:w-full md:w-24 ">
             <p
               className={`sm:px-4 px-2 sm:py-2 mx-2 rounded-full font-semibold ${
                 item.bg ? "bg-[#12BDF3]" : "bg-[#FFFFFF] text-black"

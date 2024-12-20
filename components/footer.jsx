@@ -91,7 +91,7 @@ const Footer = () => {
               <ul className="pt-5 [&>li]:text-base [&>li]:font-normal [&>li]:text-white [&>li]:mt-5">
                 <li>Help</li>
                 <li>FAQ</li>
-                <li>info@ikonicdev.com</li>
+                <li>info@ikonicdev.c</li>
                 <li>Terms</li>
               </ul>
             </div>

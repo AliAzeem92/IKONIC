@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-center py-[30px] text-3xl sm:text-5xl font-semibold px-10 ">
+          <h1 className="text-center py-[30px] text-3xl md:text-4xl lg:text-5xl font-semibold px-10 ">
             Hire your Ikonic Developers in a
             <br />
             Few Simple Steps
@@ -54,10 +54,12 @@ const Hero = () => {
             text="View Our Previous Work"
           />
         </div>
-        <div className="flex flex-col sm:flex-row justify-between w-full sm:px-[183px] px-8 sm:py-5 ">
-          <HeroServices text="Hire Developers in 24-48 hours" />
-          <HeroServices text="Secure and Scalable Solutions" />
-          <HeroServices text="Seamless Integration with your Team" />
+        <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-between w-full lg:px-[170px] px-8 sm:py-5">
+            <HeroServices text="Hire Developers in 24-48 hours" />
+            <HeroServices text="Secure and Scalable Solutions" />
+            <HeroServices text="Seamless Integration with your Team" />
+          </div>
         </div>
       </div>
       <div>
