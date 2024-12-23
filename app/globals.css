@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-image: url("/BG.png");
+  background-image: url('/BG.png');
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 1007px;
@@ -67,4 +67,73 @@ body {
   .animate-scroll {
     animation-duration: 40s; /* Adjust speed for smaller screens */
   }
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 20px;
+  height: 17px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #fff 90%, #0000);
+  background: var(--_g) 0% 30%, var(--_g) 50% 30%, var(--_g) 100% 30%;
+  background-size: 5px 8px;
+  animation: l3 1.5s infinite linear;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+@keyframes animateBorderRadius {
+  0% {
+    border-radius: 5px;
+    background-color: #e3e4e5;
+    border-color: transparent;
+  }
+  33% {
+    border-radius: 50%;
+    background-color: #12bdf3;
+    border-color: #12bdf3;
+  }
+  66% {
+    border-radius: 5px;
+    background-color: #12bdf3;
+    border-color: #12bdf3;
+  }
+  100% {
+    border-radius: 5px;
+    background-color: #e3e4e5;
+    border-color: transparent;
+  }
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  animation: animateBorderRadius 3s infinite;
+}
+
+.icon-container.animation-0 {
+  animation-delay: 0s;
+}
+
+.icon-container.animation-1 {
+  animation-delay: 1s;
+}
+
+.icon-container.animation-2 {
+  animation-delay: 2s;
 }

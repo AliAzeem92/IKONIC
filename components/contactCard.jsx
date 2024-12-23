@@ -40,21 +40,21 @@
 //
 //
 //
-import Image from "next/image";
-import phone from "@/public/icons/phone.svg";
-import massage from "@/public/icons/massage.svg";
-import calender from "@/public/icons/calender.svg";
+import Image from 'next/image';
+import phone from '@/public/icons/phone.svg';
+import massage from '@/public/icons/massage.svg';
+import calender from '@/public/icons/calender.svg';
 
 const contactData = [
   {
     id: 1,
-    title: "Get in Touch",
+    title: 'Get in Touch',
     description:
-      "A plan that best suits your needs and submit your initial task for review.",
+      'A plan that best suits your needs and submit your initial task for review.',
     icons: [
-      { src: phone, alt: "Phone Icon" },
-      { src: massage, alt: "Message Icon" },
-      { src: calender, alt: "Calendar Icon" },
+      { src: phone, alt: 'Phone Icon' },
+      { src: massage, alt: 'Message Icon' },
+      { src: calender, alt: 'Calendar Icon' },
     ],
   },
 ];

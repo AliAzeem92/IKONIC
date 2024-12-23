@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Logo from "@/public/logo.svg";
-import Link from "next/link";
-import DropDown from "./dropDown";
-import Button from "./Button";
+import Image from 'next/image';
+import Logo from '@/public/logo.svg';
+import Link from 'next/link';
+import DropDown from './dropDown';
+import Button from './Button';
 
 const Navbar = () => {
   return (
@@ -26,7 +26,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <Button title="Lets Talk.." className="bg-black" />
+            <Button title="Lets Talk" className="bg-black" />
           </div>
         </div>
       </div>
