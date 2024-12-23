@@ -71,7 +71,7 @@ const Brands = () => {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="filter grayscale hover:grayscale-0 transition duration-300 w-20 sm:w-auto"
+            className="filter grayscale "
           />
         ))}
       </div>

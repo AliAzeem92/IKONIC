@@ -53,7 +53,7 @@ const WorkerReviews = () => {
   };
 
   return (
-    <main className="p-10 flex flex-col ">
+    <main className="pt-10 flex flex-col ">
       {/* Navigation Buttons */}
       <div className="flex flex-row-reverse gap-10 mb-5 ">
         <button onClick={goToNextReview}>
@@ -65,7 +65,7 @@ const WorkerReviews = () => {
       </div>
 
       {/* Sliding Reviews */}
-      <div className="relative overflow-hidden sm:max-w-4xl max-w-96   ">
+      <div className="relative overflow-hidden lg:max-w-4xl md:max-w-2xl max-w-80 ">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
