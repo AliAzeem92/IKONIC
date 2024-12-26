@@ -11,12 +11,12 @@ const Services = () => {
     <main className="flex flex-col items-center bg-[#F4F4F4] p-[7%]">
       <div className="flex flex-col w-full sm:gap-[40px] gap-[26px]">
         <div>
-          <h1 className="sm:text-5xl text-3xl font-semibold">
+          <h1 className="sm:text-5xl text-3xl 3xl:text-7xl font-semibold">
             Services We Offer
           </h1>
         </div>
-        <div className="flex sm:flex-row flex-col justify-between sm:text-xl text-sm gap-[26px]">
-          <div className="sm:w-[40%]">
+        <div className="flex sm:flex-row flex-col justify-between sm:text-xl 3xl:text-3xl text-sm gap-[26px]">
+          <div className="sm:w-[50%]">
             <p>
               Hire the ikonic team for your desired business goals you want to
               achieve in future.

@@ -8,7 +8,7 @@ const SkilledPortfolio = () => {
     <main className="flex flex-col items-center bg-[#021318] text-white pt-[6%] pb-[13%] px-[6%] ">
       <div className="flex items-center justify-between w-full mb-[6%] ">
         <div>
-          <h1 className="text-2xl sm:text-4xl font-semibold">
+          <h1 className="text-2xl sm:text-4xl 3xl:text-6xl font-semibold">
             Portfolio of Our
             <br />
             Skilled Professionals
@@ -27,7 +27,7 @@ const SkilledPortfolio = () => {
         className="-mt-12 "
         titleColor="text-white-[#FFFFFF] "
         descriptionColor="text-white-[#FFFFFF] "
-        textSize="text-sm "
+        textSize="text-sm 3xl:text-xl "
       />
     </main>
   );

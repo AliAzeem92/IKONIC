@@ -91,7 +91,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[214.39px] h-[267px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 "
+            className="w-[214.39px] h-[267px] 3xl:w-[250px] 3xl:h-[300px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 "
             style={{
               backgroundImage: `url(${bgImage})`,
               backgroundSize: "cover",
@@ -103,11 +103,15 @@ export const InfiniteMovingCards = ({
             <blockquote>
               <div className="absolute bottom-4 left-4 right-4 bg-white rounded-lg shadow-md p-4">
                 <span className="flex flex-col gap-2">
-                  <span className="text-sm text-[#1A1A1A] font-semibold">
+                  <span className="text-sm 3xl:text-lg text-[#1A1A1A] font-semibold">
                     {item.name}
                   </span>
-                  <span className="text-sm text-black font-normal">
-                    <Image src={item.developer} alt={item.developer} />
+                  <span>
+                    <Image
+                      src={item.developer}
+                      alt={item.developer}
+                      className="3xl:size-[100%] "
+                    />
                   </span>
                 </span>
               </div>

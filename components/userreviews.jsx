@@ -1,21 +1,21 @@
-'use client';
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+"use client";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function UserReviews() {
   const [currentIndex, setCurrentIndex] = useState(0); // Active user index
   const [showPopup, setShowPopup] = useState(false);
-  const [activeVideo, setActiveVideo] = useState('');
+  const [activeVideo, setActiveVideo] = useState("");
   const [isPaused, setIsPaused] = useState(false); // Pause on hover
 
   const reviews = [
-    { id: 1, img: '/clients/client.svg', video: 'video1.mp4' },
-    { id: 2, img: '/clients/client1.svg', video: 'video2.mp4' },
-    { id: 3, img: '/clients/client2.svg', video: 'video3.mp4' },
-    { id: 4, img: '/clients/client3.svg', video: 'video4.mp4' },
-    { id: 5, img: '/clients/client4.svg', video: 'video5.mp4' },
-    { id: 6, img: '/clients/client.svg', video: 'video6.mp4' },
-    { id: 7, img: '/clients/client1.svg', video: 'video7.mp4' },
+    { id: 1, img: "/clients/client.svg", video: "video1.mp4" },
+    { id: 2, img: "/clients/client1.svg", video: "video2.mp4" },
+    { id: 3, img: "/clients/client2.svg", video: "video3.mp4" },
+    { id: 4, img: "/clients/client3.svg", video: "video4.mp4" },
+    { id: 5, img: "/clients/client4.svg", video: "video5.mp4" },
+    { id: 6, img: "/clients/client.svg", video: "video6.mp4" },
+    { id: 7, img: "/clients/client1.svg", video: "video7.mp4" },
   ];
 
   const [itemsPerSlide, setItemsPerSlide] = useState(5); // Default items per slide (desktop)
@@ -31,8 +31,8 @@ export default function UserReviews() {
     };
 
     handleResize(); // Run on initial load
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Handle continuous loop for currentIndex
@@ -57,7 +57,7 @@ export default function UserReviews() {
   // Close popup
   const closePopup = () => {
     setShowPopup(false);
-    setActiveVideo('');
+    setActiveVideo("");
   };
 
   // Handle dot navigation (slides 2 users at a time)
@@ -68,10 +68,10 @@ export default function UserReviews() {
   return (
     <div className="w-full md:max-w-[1240px] mx-auto p-5 md:p-0">
       <div className="mt-36">
-        <h2 className="text-5xl text-center font-medium text-[#021318] leading-[57.6px] mx-auto md:w-[630px]">
+        <h2 className="text-5xl 3xl:text-7xl text-center font-medium text-[#021318] leading-[57.6px] mx-auto md:w-[630px] 3xl:w-[750px] ">
           Trusted by Over 200+ Clients Worldwide
         </h2>
-        <p className="text-xl text-center mt-8 font-medium text-[#021318CC]">
+        <p className="text-xl 3xl:text-3xl text-center mt-8 font-medium text-[#021318CC]">
           People who chose us, and never looked back!
         </p>
       </div>
@@ -101,7 +101,7 @@ export default function UserReviews() {
                   height={100000000}
                   src={review.img}
                   alt={`User ${review.id}`}
-                  className="w-56 object-cover"
+                  className="w-56 3xl:w-60 object-cover"
                 />
                 <button
                   onClick={() => openPopup(review.video)}
@@ -133,8 +133,8 @@ export default function UserReviews() {
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full ${
                 Math.floor(currentIndex / 2) === index
-                  ? 'bg-blue-500'
-                  : 'bg-gray-400'
+                  ? "bg-blue-500"
+                  : "bg-gray-400"
               }`}
             ></button>
           ))}

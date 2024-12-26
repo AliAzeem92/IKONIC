@@ -9,17 +9,17 @@ import heroBgImage from "@/public/heroBgImage.svg";
 
 const Hero = () => {
   return (
-    <div className="bg-[#f1f1f1] ">
-      <div
-        className="flex flex-col items-center pt-[53px] sm:pt-[100px] mb-[75.5px] "
-        style={{
-          backgroundImage: `url(${heroBgImage.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "top",
-        }}
-      >
-        <div className="flex bg-[#0314190F] py-[10px] px-[22px] rounded-full items-center text-xs sm:text-base  ">
+    <div
+      className="bg-[#f1f1f1] "
+      style={{
+        backgroundImage: `url(${heroBgImage.src})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top",
+      }}
+    >
+      <div className="flex flex-col items-center pt-[53px] sm:pt-[100px] mb-[75.5px] ">
+        <div className="flex bg-[#0314190F] py-[10px] px-[22px] rounded-full items-center text-xs sm:text-base 3xl:text-2xl ">
           <div>
             <span className="font-bold ">200+</span> Developers for you to
             subscribe
@@ -31,14 +31,14 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-center py-[30px] text-3xl md:text-4xl lg:text-5xl font-semibold px-10 ">
+          <h1 className="text-center py-[30px] text-3xl md:text-4xl lg:text-6xl 3xl:text-8xl font-semibold px-10 ">
             Hire your Ikonic Developers in a
             <br />
             Few Simple Steps
           </h1>
         </div>
         <div>
-          <h1 className="text-[#4a4a4a] max-w-[688px] text-center text-xl px-5  ">
+          <h1 className="text-[#4a4a4a] max-w-[688px] 3xl:max-w-[1000px] text-center text-xl 3xl:text-3xl px-5  ">
             Say goodbye to long hiring cycles, integration headaches, and
             security concerns. Build your dream software team in just 24-48
             hours, with complete control and peace of mind.
@@ -46,11 +46,11 @@ const Hero = () => {
         </div>
         <div className="flex sm:flex-row flex-col sm:gap-5 ">
           <HeroHoverButton
-            className="bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg"
+            className="bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg 3xl:font-semibold "
             text="Book a consultation call"
           />
           <HeroHoverButton
-            className="hover:bg-black hover:text-white transition-all duration-300 shadow-lg border-black border-2 "
+            className="hover:bg-black hover:text-white transition-all duration-300 shadow-lg border-black border-2 3xl:font-semibold "
             text="View Our Previous Work"
           />
         </div>

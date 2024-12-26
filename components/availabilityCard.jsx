@@ -37,14 +37,18 @@ const AvailabilityCard = ({
     >
       {variant === "default" ? (
         <>
-          <h1 className="text-lg font-semibold">{heading}</h1>
-          <p>{description}</p>
-          <Image src={Img} alt={`Image for ${heading}`} className="mb-[20px]" />
+          <h1 className="text-lg 3xl:text-2xl font-semibold">{heading}</h1>
+          <p className="3xl:text-xl ">{description}</p>
+          <Image
+            src={Img}
+            alt={`Image for ${heading}`}
+            className="mb-[20px] 3xl:w-[80%] 3xl:py-10 "
+          />
         </>
       ) : (
-        <div className={`flex flex-col text-white gap-16 p-6 ${className} `}>
-          <div className="flex flex-col justify-between gap-6">
-            <h2 className="text-3xl font-semibold">
+        <div className={`flex flex-col text-white p-6 ${className} `}>
+          <div className="flex flex-col justify-between gap-6 3xl:gap-10 ">
+            <h2 className="text-3xl 3xl:text-5xl font-semibold">
               {heading}
               {heading2 && <br />}
               {heading2}
@@ -52,19 +56,18 @@ const AvailabilityCard = ({
             {button && (
               <Button
                 title={button}
-                className="bg-[#28C3F4] hover:bg-[#1CAFE0]"
+                className="bg-[#28C3F4] hover:bg-[#1CAFE0] 3xl:text-3xl "
               />
             )}
-            <div className="flex justify-center items-center md:flex-row flex-col md:gap-10 gap-5 ">
+            <div className="flex justify-center items-center md:flex-row flex-col md:gap-10 gap-5 3xl:gap-24 ">
               {whatsapp && (
                 <div className="flex items-center gap-3">
                   <Image
                     src={whatsapp}
                     alt="WhatsApp Icon"
-                    width={30}
-                    height={30}
+                    className="3xl:w-14 "
                   />
-                  <p>WhatsApp</p>
+                  <p className="3xl:text-2xl ">WhatsApp</p>
                 </div>
               )}
               {telegram && (
@@ -72,16 +75,17 @@ const AvailabilityCard = ({
                   <Image
                     src={telegram}
                     alt="Telegram Icon"
-                    width={30}
-                    height={30}
+                    className="3xl:w-14 "
                   />
-                  <p>Telegram</p>
+                  <p className="3xl:text-2xl ">Telegram</p>
                 </div>
               )}
             </div>
           </div>
           {description && (
-            <p className="text-sm text-center md:mt-10 ">{description}</p>
+            <p className="text-sm 3xl:text-2xl text-center md:mt-10 3xl:mt-20 ">
+              {description}
+            </p>
           )}
         </div>
       )}

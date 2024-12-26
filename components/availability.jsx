@@ -12,12 +12,12 @@ const Availability = () => {
   return (
     <main className="flex flex-col items-center p-[8%] text-center ">
       <div>
-        <h1 className="font-semibold text-5xl mb-[7%] ">
+        <h1 className="font-semibold text-5xl 3xl:text-7xl mb-[7%] ">
           Unlock the Power of Agile
           <br />
           Staffing Solutions
         </h1>
-        <p className="text-xl mb-[7%] ">
+        <p className="text-xl 3xl:text-3xl mb-[7%] ">
           Efficient, secure, and scalable developers tailored to your project
           <br />
           needs — all within your time zone and on your timeline.

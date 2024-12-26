@@ -55,17 +55,17 @@ const WorkerReviews = () => {
   return (
     <main className="pt-10 flex flex-col ">
       {/* Navigation Buttons */}
-      <div className="flex flex-row-reverse gap-10 mb-5 ">
+      <div className="flex flex-row-reverse gap-10 3xl:gap-16 mb-5 ">
         <button onClick={goToNextReview}>
-          <Image src={right} alt="Right arrow" />
+          <Image src={right} alt="Right arrow" className="3xl:size-[150%] " />
         </button>
         <button onClick={goToPrevReview}>
-          <Image src={left} alt="Left arrow" />
+          <Image src={left} alt="Left arrow" className="3xl:size-[150%] " />
         </button>
       </div>
 
       {/* Sliding Reviews */}
-      <div className="relative overflow-hidden lg:max-w-4xl md:max-w-2xl max-w-80 ">
+      <div className="relative overflow-hidden max-w-80 md:max-w-2xl lg:max-w-4xl 3xl:max-w-6xl ">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -77,10 +77,8 @@ const WorkerReviews = () => {
               key={review.id}
               className="flex flex-none w-full gap-24 p-5 bg-cover bg-center"
             >
-              {/* Worker Image and Play Button */}
               <WorkerReviewsImg className="lg:block hidden " />
 
-              {/* Review Content */}
               <div
                 className="ml-5 flex flex-col justify-center relative -top-5 "
                 style={{
@@ -90,16 +88,25 @@ const WorkerReviews = () => {
                   backgroundPosition: "top left",
                 }}
               >
-                <h1 className="sm:text-2xl text-lg font-semibold lg:mb-3">{`"${review.reviewText}"`}</h1>
+                <h1 className="sm:text-2xl text-lg 3xl:text-4xl font-semibold lg:mb-3 3xl:-mt-10  ">{`"${review.reviewText}"`}</h1>
                 <div className="flex lg:flex-none flex-col-reverse lg:flex-col items-center lg:items-start ">
-                  <Image src={review.ratingImage} alt="Star" className="mb-2" />
+                  <Image
+                    src={review.ratingImage}
+                    alt="Star"
+                    className="mb-2 3xl:w-44 "
+                  />
+                  {/* Mobile & Tablet Screens */}
                   <p className="text-[#999999] block lg:hidden ">
                     {review.workerRole}
                   </p>
-                  <h4 className="font-semibold">{review.workerName}</h4>
-                  <p className="text-[#999999] lg:block hidden ">
+                  {/* DeskTop Screen */}
+                  <h4 className="font-semibold 3xl:text-2xl ">
+                    {review.workerName}
+                  </h4>
+                  <p className="text-[#999999] 3xl:text-lg lg:block hidden ">
                     {review.workerRole}
                   </p>
+                  {/* Mobile & Tablet Screens */}
                   <WorkerReviewsImg className="block lg:hidden " />
                 </div>
               </div>

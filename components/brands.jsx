@@ -34,7 +34,7 @@ const Brands = () => {
   return (
     <main className="flex sm:flex-row flex-col sm:gap-20 justify-center sm:py-20 py-10 px-5 ">
       <div>
-        <div className="sm:text-4xl text-2xl font-semibold mb-10">
+        <div className="sm:text-4xl text-2xl 3xl:text-6xl font-semibold mb-10">
           Chosen by Global Leading
           <br />
           Brands and Agencies
@@ -51,13 +51,11 @@ const Brands = () => {
                 }}
               ></div>
               <div className="flex flex-col gap-2 ">
-                <span className="flex items-center">
-                  <h3 className="text-2xl font-bold">{section.heading}</h3>
-                  <h3 className="text-2xl font-bold text-[#12BDF3]">
-                    {section.symbol}
-                  </h3>
+                <span className="flex items-center text-2xl 3xl:text-5xl font-bold ">
+                  <h3>{section.heading}</h3>
+                  <h3 className="text-[#12BDF3]">{section.symbol}</h3>
                 </span>
-                <p className="text-xs font-semibold sm:font-normal ">
+                <p className="text-xs 3xl:text-lg font-semibold sm:font-normal ">
                   {section.info}
                 </p>
               </div>
@@ -71,7 +69,7 @@ const Brands = () => {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="filter grayscale "
+            className="filter grayscale 3xl:size-[110%] "
           />
         ))}
       </div>

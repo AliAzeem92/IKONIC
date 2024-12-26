@@ -17,10 +17,9 @@ export default function DropDown() {
           <Image src={menu} alt={menu} />
         </Button>
       </DropdownTrigger>
-      <DropdownMenu className="p-2 bg-blue-500 text-white rounded-lg  ">
-        <DropdownItem>About</DropdownItem>
+      <DropdownMenu className="p-2 bg-[#28C3F4] text-white rounded-lg border-4 border-gray-200 text-xl right-[280%] w-[380%] ">
+        <DropdownItem className="mb-1 ">About</DropdownItem>
         <DropdownItem>Pricing</DropdownItem>
-        <DropdownItem>Delete file</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );

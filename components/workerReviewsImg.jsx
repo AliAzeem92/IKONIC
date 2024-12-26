@@ -9,6 +9,7 @@ const WorkerReviewsImg = ({ className }) => {
     <div
       className={`lg:flex-shrink-0 flex flex-col items-center ${className} `}
     >
+      {/* Mobile & Tablet Screen Play Button */}
       <div className="block lg:hidden ">
         <div className="relative sm:top-14 top-8 sm:left-32 left-16 ">
           <Image
@@ -23,18 +24,20 @@ const WorkerReviewsImg = ({ className }) => {
           />
         </div>
       </div>
-      <Image src={Img} alt="Img" className="md:w-auto md:h-auto w-[50%] " />
+      {/* Main Image */}
+      <Image src={Img} alt="Img" className="md:w-auto md:h-auto 3xl:w-96 " />
+      {/* Desktop Play Button */}
       <div className="lg:block hidden ">
-        <div className="relative -top-12 left-32 ">
+        <div className="relative -top-12 left-32 3xl:left-48 3xl:-top-24 ">
           <Image
             src={playNow}
             alt="Rotating Fan"
-            className="rotating-fan mx-auto  size-28"
+            className="rotating-fan mx-auto size-36 3xl:size-48 "
           />
           <Image
             src={play}
             alt="Center Image"
-            className="w-6 h-7 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+            className="size-7 3xl:size-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
           />
         </div>
       </div>

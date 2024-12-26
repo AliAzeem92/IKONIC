@@ -49,28 +49,28 @@ const PricingSlider = () => {
     <div className="bg-[#FFFFFF] text-black p-[5%] rounded-xl w-full">
       <div className="flex sm:flex-row flex-col-reverse w-full justify-between ">
         <div className="sm:w-[70%] ">
-          <h1 className="sm:text-5xl text-xl font-semibold sm:mb-6 mb-3 ">
+          <h1 className="sm:text-5xl text-xl 3xl:text-7xl font-semibold sm:mb-6 mb-3 ">
             All Inclusive
           </h1>
-          <p className="sm:text-lg text-sm ">
+          <p className="sm:text-lg text-sm 3xl:text-2xl ">
             Our pricing is designed to fit your project needs—whether you need
             one developer or an entire team. Enjoy complete flexibility.
           </p>
         </div>
         <div className="flex flex-col sm:items-center mt-3 mb-6 ">
-          <h4 className="font-semibold text-xs sm:text-base mb-2 sm:text-black text-[#858C8E] ">
+          <h4 className="font-semibold text-xs 3xl:text-2xl sm:text-base mb-2 3xl:mb-4 sm:text-black text-[#858C8E] ">
             Subscribing 3 Devs
           </h4>
-          <h1 className="text-5xl font-semibold ">$2,999</h1>
+          <h1 className="text-5xl 3xl:text-7xl font-semibold ">$2,999</h1>
         </div>
       </div>
 
       <div className="lg:flex w-full justify-between">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
           {items.map((item) => (
-            <div key={item.id} className="flex gap-3">
-              <Image src={item.src} alt={item.alt} />
-              <p className="sm:text-lg text-sm ">{item.text}</p>
+            <div key={item.id} className="flex gap-3 items-center ">
+              <Image src={item.src} alt={item.alt} className="3xl:w-[15%] " />
+              <p className="sm:text-lg text-sm 3xl:text-3xl ">{item.text}</p>
             </div>
           ))}
         </div>
@@ -81,8 +81,8 @@ const PricingSlider = () => {
             text="Get Our Services"
           />
           <div className="flex gap-5 items-center ">
-            <p className="text-[gray] ">Need Custom Plan</p>
-            <Image src={OpenLinkGray} alt="Arrow" />
+            <p className="text-[gray] 3xl:text-xl ">Need Custom Plan</p>
+            <Image src={OpenLinkGray} alt="Arrow" className="3xl:w-4 " />
           </div>
         </div>
       </div>

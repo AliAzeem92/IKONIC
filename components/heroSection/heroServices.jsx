@@ -3,8 +3,8 @@ import tick from "@/public/icons/ticked.svg";
 
 const HeroServices = ({ text }) => {
   return (
-    <div className="flex items-center gap-5 lg:text-xl text-base py-1 sm:py-0 ">
-      <Image src={tick} alt="Tick Icon" width={32} />
+    <div className="flex items-center gap-5 lg:text-xl 3xl:text-3xl text-base py-1 sm:py-0 ">
+      <Image src={tick} alt="Tick Icon" className="3xl:w-10 " />
       <h1>{text} </h1>
     </div>
   );

@@ -22,17 +22,19 @@ const CardSection = ({
               />
             </div>
             <div className="pt-9">
-              <div className="flex gap-2 mb-2">
+              <div className="flex gap-2 3xl:gap-4 mb-2">
                 {card.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className={`text-[14px] font-normal py-[10px] px-4 rounded-full ${tag.bgColor} tags`}
+                    className={`text-[14px] 3xl:text-[20px] font-normal py-[10px] px-4 rounded-full ${tag.bgColor} tags`}
                   >
                     {tag.name}
                   </span>
                 ))}
               </div>
-              <h3 className={`font-medium text-2xl mb-2 mt-4 ${titleColor}`}>
+              <h3
+                className={`font-medium text-2xl 3xl:text-4xl mb-2 mt-4 ${titleColor}`}
+              >
                 {card.title}
               </h3>
               <p className={`${textSize} mt-4 ${descriptionColor}`}>

@@ -16,7 +16,7 @@ const ComparisonTable = () => {
   return (
     <div className="max-w-7xl flex flex-col items-center py-[7%] sm:gap-16 gap-10  ">
       <div>
-        <h1 className="sm:text-5xl text-xl font-semibold ">
+        <h1 className="sm:text-5xl text-xl 3xl:text-7xl font-semibold ">
           Why Choose IKONIC?
         </h1>
       </div>

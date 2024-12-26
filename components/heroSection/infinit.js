@@ -40,7 +40,7 @@ const Infinit = () => {
       <InfiniteMovingCards
         items={items}
         direction="left"
-        speed="fast"
+        speed="normal"
         pauseOnHover={true}
         bgImage={Img.src}
         className="my-custom-class"

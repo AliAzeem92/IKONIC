@@ -43,10 +43,10 @@ const Pricing = () => {
   return (
     <main className="flex flex-col items-center bg-[#021318] text-white p-[7%]">
       <div className="text-center">
-        <h1 className="sm:text-5xl text-xl font-semibold px-5 mb-[7%] mt-5">
+        <h1 className="sm:text-5xl text-xl 3xl:text-7xl font-semibold px-5 mb-[7%] mt-5">
           Here is our Flat Pricing
         </h1>
-        <p className="sm:text-xl text-sm font-light px-5 mb-[10%]">
+        <p className="sm:text-xl text-sm 3xl:text-3xl font-light px-5 mb-[10%]">
           Our pricing is designed to fit your project needs.
         </p>
       </div>
@@ -54,7 +54,7 @@ const Pricing = () => {
         {data.map((item, index) => (
           <div key={index} className="flex items-center lg:w-full md:w-24 ">
             <p
-              className={`sm:px-4 px-2 sm:py-2 mx-2 rounded-full font-semibold ${
+              className={`sm:px-4 px-2 sm:py-2 3xl:px-5 mx-2 3xl:text-4xl rounded-full font-semibold ${
                 item.bg ? "bg-[#12BDF3]" : "bg-[#FFFFFF] text-black"
               }`}
             >
@@ -62,7 +62,7 @@ const Pricing = () => {
             </p>
             {index < 5 && (
               <span
-                className={`border-2 flex-1 h-0 sm:w-[90px] w-6 ${
+                className={`border-2 flex-1 h-0 sm:w-[90px] 3xl:w-[150px] w-6 ${
                   item.border ? "border-[#12BDF3]" : "border-[#FFFFFF]"
                 }`}
               ></span>
@@ -77,8 +77,8 @@ const Pricing = () => {
             key={`contact-${index}`}
             className="flex gap-4 items-center mt-[5%]"
           >
-            <Image src={item.Ima} alt={item.text} />
-            <p>{item.text}</p>
+            <Image src={item.Ima} alt={item.text} className="3xl:w-[40%] " />
+            <p className="3xl:text-3xl ">{item.text}</p>
           </div>
         ))}
       </div>

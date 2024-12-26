@@ -7,12 +7,12 @@ const Contact = () => {
     <div className="sm:py-[133px] py-[60px] ">
       <div>
         <div className="flex flex-col items-center text-center sm:gap-[40px] gap-[26px] ">
-          <h1 className="sm:text-5xl text-2xl font-semibold px-5 ">
+          <h1 className="sm:text-5xl text-2xl 3xl:text-7xl font-semibold px-5 ">
             Add and Onboard Skilled
             <br />
             Talent to Your Team Seamlessly
           </h1>
-          <p className="sm:text-xl text-lg px-3 ">
+          <p className="sm:text-xl text-lg 3xl:text-3xl px-3 ">
             We help you identify, onboard, and integrate skilled professionals
             to
             <br />
@@ -20,9 +20,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
-          <ContactCard />
-          {/* <ContactCard />
-          <ContactCard /> */}
+          {/* <ContactCard /> */}
         </div>
         <div className="flex justify-center ">
           <WorkerReviews />

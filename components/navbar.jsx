@@ -10,14 +10,15 @@ const Navbar = () => {
       <div className="flex justify-between w-full p-4 sm:px-[30px] sm:py-[16px] bg-white rounded-lg items-center ">
         <div>
           <Link href="/">
-            <Image src={Logo} alt="Logo" />
+            <Image src={Logo} alt="Logo" className="3xl:w-80 " />
           </Link>
         </div>
         <div className="sm:hidden ">
           <DropDown />
         </div>
         <div className="sm:flex gap-[84px] items-center hidden ">
-          <ul className="flex gap-[55px] font-semibold text-lg ">
+          <ul className="flex gap-[55px] font-semibold text-lg 3xl:text-4xl ">
+            {" "}
             <li>
               <a href="#">About</a>
             </li>
@@ -26,7 +27,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <Button title="Lets Talk.." className="bg-black" />
+            <Button title="Lets Talk..." className="bg-black" />
           </div>
         </div>
       </div>
