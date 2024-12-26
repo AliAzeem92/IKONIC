@@ -27,7 +27,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <Button title="Lets Talk..." className="bg-black" />
+            <Button title="Lets Talk.." className="bg-black" />
           </div>
         </div>
       </div>
