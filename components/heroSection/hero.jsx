@@ -9,15 +9,7 @@ import heroBgImage from "@/public/heroBgImage.svg";
 
 const Hero = () => {
   return (
-    <div
-      className="bg-[#f1f1f1] "
-      style={{
-        backgroundImage: `url(${heroBgImage.src})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top",
-      }}
-    >
+    <div>
       <div className="flex flex-col items-center pt-[53px] sm:pt-[100px] mb-[75.5px] ">
         <div className="flex bg-[#0314190F] py-[10px] px-[22px] rounded-full items-center text-xs sm:text-base 3xl:text-2xl ">
           <div>

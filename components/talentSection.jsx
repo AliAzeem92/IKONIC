@@ -11,7 +11,7 @@ const TalentSection = () => {
       <div className="flex flex-col justify-center bg-[#021318] text-white py-16 px-6 md:p-5 lg:px-20 lg:py-10 ">
         <div className="container mx-auto ">
           <div className="flex flex-col">
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-[204px] md:gap-14 py-16 ">
+            <div className="flex flex-col md:flex-col lg:flex-row gap-12 md:gap-14 lg:gap-44 py-16 ">
               <div className="lg:max-w-2xl 3xl:max-w-5xl space-y-6 3xl:space-y-10 ">
                 <h2 className="text-3xl md:text-2xl lg:text-5xl 3xl:text-7xl font-bold leading-tight text-center md:text-left">
                   Instantly Access Top Talent to Get Quality Work Done by

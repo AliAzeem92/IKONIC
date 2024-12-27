@@ -53,7 +53,7 @@ const WorkerReviews = () => {
   };
 
   return (
-    <main className="pt-10 flex flex-col ">
+    <main className="flex flex-col ">
       {/* Navigation Buttons */}
       <div className="flex flex-row-reverse gap-10 3xl:gap-16 mb-5 ">
         <button onClick={goToNextReview}>

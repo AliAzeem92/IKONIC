@@ -53,12 +53,14 @@ const AvailabilityCard = ({
               {heading2 && <br />}
               {heading2}
             </h2>
-            {button && (
-              <Button
-                title={button}
-                className="bg-[#28C3F4] hover:bg-[#1CAFE0] 3xl:text-3xl "
-              />
-            )}
+            <div className="flex justify-center ">
+              {button && (
+                <Button
+                  title={button}
+                  className="bg-[#28C3F4] hover:bg-[#1CAFE0] 3xl:text-3xl "
+                />
+              )}
+            </div>
             <div className="flex justify-center items-center md:flex-row flex-col md:gap-10 gap-5 3xl:gap-24 ">
               {whatsapp && (
                 <div className="flex items-center gap-3">

@@ -5,7 +5,7 @@ import cardsData from "./ui/cardsData";
 
 const SkilledPortfolio = () => {
   return (
-    <main className="flex flex-col items-center bg-[#021318] text-white pt-[6%] pb-[13%] px-[6%] ">
+    <main className="flex flex-col items-center bg-[#021318] text-white p-[6%] ">
       <div className="flex items-center justify-between w-full mb-[6%] ">
         <div>
           <h1 className="text-2xl sm:text-4xl 3xl:text-6xl font-semibold">

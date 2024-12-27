@@ -30,7 +30,7 @@ export default function Developers() {
 
   return (
     <main className="flex items-center justify-center ">
-      <div className="relativ h-[300px] 3xl:h-[400px] flex items-center">
+      <div className="h-[300px] 3xl:h-[400px] flex items-center">
         {TITLES.map((title, index) => (
           <ScrollingTitle
             key={title}
