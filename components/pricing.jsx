@@ -50,26 +50,6 @@ const Pricing = () => {
           Our pricing is designed to fit your project needs.
         </p>
       </div>
-      <div className="flex mb-[3%]">
-        {data.map((item, index) => (
-          <div key={index} className="flex items-center lg:w-full md:w-24 ">
-            <p
-              className={`sm:px-4 px-2 sm:py-2 3xl:px-5 mx-2 3xl:text-4xl rounded-full font-semibold ${
-                item.bg ? "bg-[#12BDF3]" : "bg-[#FFFFFF] text-black"
-              }`}
-            >
-              {index + 1}
-            </p>
-            {index < 5 && (
-              <span
-                className={`border-2 flex-1 h-0 sm:w-[90px] 3xl:w-[150px] w-6 ${
-                  item.border ? "border-[#12BDF3]" : "border-[#FFFFFF]"
-                }`}
-              ></span>
-            )}
-          </div>
-        ))}
-      </div>
       <PricingSlider />
       <div className="flex sm:flex-row flex-col mt-[3%] sm:gap-32 gap-5 ">
         {contact.map((item, index) => (

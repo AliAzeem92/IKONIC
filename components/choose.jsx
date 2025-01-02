@@ -1,10 +1,76 @@
 import Image from "next/image";
 import star from "@/public/icons/star.svg";
 import line from "@/public/icons/curlyLine.svg";
-import skillGroup from "@/public/icons/skillGroup.svg";
 import arrow from "@/public/icons/openLinkWhite.svg";
-import ChooseTable from "./chooseTable";
 import ComparisonTable from "./chooseTable";
+import ImageSlider from "./imageSlider";
+
+import VUEJS from "@/public/devTech/VUEJS.svg";
+import HTML from "@/public/devTech/HTML.svg";
+import CSS from "@/public/devTech/CSS.svg";
+import JS from "@/public/devTech/JS.svg";
+import REACT from "@/public/devTech/REACT.svg";
+import ANGULAR from "@/public/devTech/ANGULAR.svg";
+import BOOTSTRAP from "@/public/devTech/BOOTSTRAP.svg";
+import TAILWINDCSS from "@/public/devTech/TAILWINDCSS.svg";
+import JQUERY from "@/public/devTech/JQUERY.svg";
+import MYSQL from "@/public/devTech/MYSQL.svg";
+import POSTGQESQL from "@/public/devTech/POSTGQESQL.svg";
+import AWS from "@/public/devTech/AWS.svg";
+
+const tech = [
+  { alt: "Angular", src: ANGULAR },
+  { alt: "React", src: REACT },
+  { alt: "CSS", src: CSS },
+  { alt: "JavaScript", src: JS },
+  { alt: "HTML", src: HTML },
+  { alt: "VUEJS", src: VUEJS },
+];
+
+const tech2 = [
+  { alt: "React", src: REACT },
+  { alt: "CSS", src: CSS },
+  { alt: "VUEJS", src: VUEJS },
+  { alt: "Angular", src: ANGULAR },
+  { alt: "HTML", src: HTML },
+  { alt: "JavaScript", src: JS },
+];
+
+const tech3 = [
+  { alt: "JavaScript", src: JS },
+  { alt: "React", src: REACT },
+  { alt: "HTML", src: HTML },
+  { alt: "CSS", src: CSS },
+  { alt: "Angular", src: ANGULAR },
+  { alt: "VUEJS", src: VUEJS },
+];
+
+const database = [
+  { alt: "PostgreSQL", src: POSTGQESQL },
+  { alt: "AWS", src: AWS },
+  { alt: "MySQL", src: MYSQL },
+  { alt: "Bootstrap", src: BOOTSTRAP },
+  { alt: "Tailwind CSS", src: TAILWINDCSS },
+  { alt: "jQuery", src: JQUERY },
+];
+
+const database2 = [
+  { alt: "MySQL", src: MYSQL },
+  { alt: "AWS", src: AWS },
+  { alt: "Tailwind CSS", src: TAILWINDCSS },
+  { alt: "PostgreSQL", src: POSTGQESQL },
+  { alt: "Bootstrap", src: BOOTSTRAP },
+  { alt: "jQuery", src: JQUERY },
+];
+
+const database3 = [
+  { alt: "jQuery", src: JQUERY },
+  { alt: "Tailwind CSS", src: TAILWINDCSS },
+  { alt: "PostgreSQL", src: POSTGQESQL },
+  { alt: "AWS", src: AWS },
+  { alt: "Bootstrap", src: BOOTSTRAP },
+  { alt: "MySQL", src: MYSQL },
+];
 
 const Choose = () => {
   return (
@@ -17,11 +83,14 @@ const Choose = () => {
               alt="star"
               className="absolute left-0 -top-5 3xl:-top-10 3xl:w-[10%] "
             />
-            <Image
-              src={skillGroup}
-              alt="skillGroup"
-              className="3xl:w-[800px] "
-            />
+            <div className=" md:w-[600px] -rotate-3 ">
+              <ImageSlider images={tech} direction="left" speed={1} />
+              <ImageSlider images={database} direction="right" speed={1} />
+              <ImageSlider images={tech2} direction="left" speed={1} />
+              <ImageSlider images={database2} direction="right" speed={1} />
+              <ImageSlider images={tech3} direction="left" speed={1} />
+              <ImageSlider images={database3} direction="right" speed={1} />
+            </div>
           </div>
           <div className="mt-5 relative ">
             <Image
@@ -49,6 +118,7 @@ const Choose = () => {
           </div>
         </div>
       </div>
+      <ImageSlider />
 
       <ComparisonTable />
     </main>

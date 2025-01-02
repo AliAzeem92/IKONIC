@@ -1,6 +1,7 @@
 import WorkerReviews from "./workerReviews";
 import AnimatedContactIcons from "./animatedContactIcons";
 import { CodeDisplay } from "./codeDisplay";
+import ImageCarousel from "./imageCarousel";
 
 const sampleCode = `class Project {
   constructor(name, status) {
@@ -39,7 +40,7 @@ const Contact = () => {
         <div className="px-[7%] py-[2%] ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center ">
             <AnimatedContactIcons />
-            <CodeDisplay code={sampleCode} />
+            <ImageCarousel />
             <CodeDisplay code={sampleCode} />
           </div>
         </div>

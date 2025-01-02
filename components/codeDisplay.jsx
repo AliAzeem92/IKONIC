@@ -15,7 +15,7 @@ export function CodeDisplay({ code }) {
   }, [code]);
 
   return (
-    <div className="bg-[#F4F4F4] rounded-3xl p-8 h-[318.12px] w-full ">
+    <div className="bg-[#F4F4F4] rounded-3xl p-8 h-[318.12px] 3xl:h-[350px] w-full ">
       <div className="flex flex-col justify-between h-full">
         <div className="flex-grow">
           <h2 className="text-2xl 3xl:text-4xl font-bold text-gray-900 mb-2">

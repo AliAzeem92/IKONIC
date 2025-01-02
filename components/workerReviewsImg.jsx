@@ -1,7 +1,7 @@
 import React from "react";
 import playNow from "@/public/icons/playNow.svg";
 import play from "@/public/icons/playButton.svg";
-import Img from "@/public/workers/2.svg";
+import Img from "@/public/customers/1.svg";
 import Image from "next/image";
 
 const WorkerReviewsImg = ({ className }) => {

@@ -10,7 +10,6 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = true,
   className,
-  bgImage,
 }) => {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
@@ -76,10 +75,7 @@ export const InfiniteMovingCards = ({
   return (
     <div
       ref={containerRef}
-      className={cn(
-        "scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
-      )}
+      className={cn("scroller relative z-20 overflow-hidden ", className)}
     >
       <ul
         ref={scrollerRef}
@@ -91,12 +87,12 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[214.39px] h-[267px] 3xl:w-[250px] 3xl:h-[300px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 "
+            className="w-[214.39px] h-[267px] 3xl:w-[350px] 3xl:h-[400px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6"
             style={{
-              backgroundImage: `url(${bgImage})`,
+              backgroundImage: `url(${item.bgImage})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundColor: "#f9d1b3",
+              backgroundColor: item.backgroundColor,
             }}
             key={item.name}
           >
@@ -110,7 +106,36 @@ export const InfiniteMovingCards = ({
                     <Image
                       src={item.developer}
                       alt={item.developer}
-                      className="3xl:size-[100%] "
+                      className="3xl:size-[100%]"
+                    />
+                  </span>
+                </span>
+              </div>
+            </blockquote>
+          </li>
+        ))}
+        {items.map((item, idx) => (
+          <li
+            className="w-[214.39px] h-[267px] 3xl:w-[350px] 3xl:h-[400px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6"
+            style={{
+              backgroundImage: `url(${item.bgImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundColor: item.backgroundColor,
+            }}
+            key={item.name}
+          >
+            <blockquote>
+              <div className="absolute bottom-4 left-4 right-4 bg-white rounded-lg shadow-md p-4">
+                <span className="flex flex-col gap-2">
+                  <span className="text-sm 3xl:text-lg text-[#1A1A1A] font-semibold">
+                    {item.name}
+                  </span>
+                  <span>
+                    <Image
+                      src={item.developer}
+                      alt={item.developer}
+                      className="3xl:size-[100%]"
                     />
                   </span>
                 </span>

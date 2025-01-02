@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Img from "@/public/workers/2.svg";
+import Img from "@/public/customers/1.svg";
 import star from "@/public/icons/5star.svg";
 import commas from "@/public/icons/commas.svg";
 import left from "@/public/icons/leftArrow.svg";

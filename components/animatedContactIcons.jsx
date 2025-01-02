@@ -22,7 +22,7 @@ export default function AnimatedContactIcons() {
   }, []);
 
   return (
-    <div className="bg-[#F4F4F4] rounded-3xl p-8 h-[318.12px] w-full ">
+    <div className="bg-[#F4F4F4] rounded-3xl p-8 h-[318.12px] 3xl:h-[350px] w-full ">
       <div className="flex flex-col justify-between h-full">
         {/* Text Section */}
         <div className="flex-grow">
