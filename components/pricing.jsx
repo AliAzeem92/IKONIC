@@ -3,9 +3,6 @@ import Image from "next/image";
 import PricingSlider from "./pricingSlider";
 import whatsapp from "@/public/icons/whatsapp.svg";
 import telegram from "@/public/icons/telegram.svg";
-import ScrollingBanner from "./languageBanner";
-import { useEffect, useState } from "react";
-import { items, newBannerItems } from "./ui/bannerData";
 
 const data = [
   { bg: true, border: true },
@@ -22,24 +19,6 @@ const contact = [
 ];
 
 const Pricing = () => {
-  const [banners, setBanners] = useState([]);
-  const [newBanners, setNewBanners] = useState([]);
-
-  // Simulate fetching data
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await new Promise((resolve) =>
-        setTimeout(() => resolve(items), 1000)
-      );
-      const newResponse = await new Promise((resolve) =>
-        setTimeout(() => resolve(newBannerItems), 1000)
-      );
-
-      setBanners(response);
-      setNewBanners(newResponse);
-    };
-    fetchData();
-  }, []);
   return (
     <main className="flex flex-col items-center bg-[#021318] text-white p-[7%]">
       <div className="text-center">

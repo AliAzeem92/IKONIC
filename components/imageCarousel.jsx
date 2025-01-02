@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { CAROUSEL_IMAGES } from "@/lib/constants";
+import { CAROUSEL_IMAGES } from "@/data/constants";
 import online from "@/public/icons/online.svg";
 
 export default function ImageCarousel() {

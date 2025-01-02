@@ -93,7 +93,7 @@ export default function UserReviews() {
             {reviews.concat(reviews).map((review, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 flex flex-col items-center relative"
+                className="flex-shrink-0 flex flex-col items-center relative md:mx-1 lg:mx-auto  "
                 style={{ width: `${100 / itemsPerSlide}%` }}
               >
                 <Image
