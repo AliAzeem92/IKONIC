@@ -1,11 +1,9 @@
 import React from "react";
-import BeforeFooter from "./beforeFooter";
 import Image from "next/image";
 
 const MobileFooter = () => {
   return (
     <div className="block md:hidden">
-      <BeforeFooter />
       <div className="bg-[#021318]">
         <div className="w-full md:max-w-[1240px] mx-auto">
           <div className="flex flex-col md:flex-row gap-10 justify-between items-center md:border-b md:border-[#FFFFFF1A] py-10 md:py-20">

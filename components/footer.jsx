@@ -1,5 +1,4 @@
 import Image from "next/image";
-import BeforeFooter from "./beforeFooter";
 import whatsapp from "@/public/whatsapp.svg";
 import telegram from "@/public/telegram.svg";
 import arrowup from "@/public/arrow-up.svg";
@@ -7,7 +6,6 @@ import arrowup from "@/public/arrow-up.svg";
 const Footer = () => {
   return (
     <div className="hidden md:block">
-      <BeforeFooter />
       <div className="bg-[#021318] px-10 3xl:px-20 ">
         <div className="w-full mx-auto">
           <div className="flex flex-col md:flex-row gap-10 justify-between items-center md:border-b md:border-[#FFFFFF1A] py-10 md:py-20">

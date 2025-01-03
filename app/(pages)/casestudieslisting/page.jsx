@@ -6,6 +6,7 @@ import ScrollingBanner from "@/components/languageBanner";
 import { items, newBannerItems } from "@/components/ui/bannerData";
 import UserReviews from "@/components/userreviews";
 import FAQ from "@/components/faqsection";
+import ContactForm from "@/components/contactForm";
 
 const Page = () => {
   const [banners, setBanners] = useState([]);
@@ -27,9 +28,9 @@ const Page = () => {
     fetchData();
   }, []);
   return (
-    <main className="overflow-hidden">
+    <main id="Case Studies Listing " className="overflow-hidden">
       <div className="w-full md:max-w-[1240px] mx-auto mt-[75px] p-5 md:p-0">
-        <h6 className="text-base font-normal bg-[#ebecec] h-10 text-center mx-auto w-[129px] pt-[6px] rounded-full">
+        <h6 className="text-base 3xl:text-4xl font-normal 3xl:font-semibold bg-[#ebecec] text-center mx-auto w-fit px-[20px] py-[6px] 3xl:px-[40px] 3xl:py-[8px] rounded-full mt-[5%] ">
           Case studies
         </h6>
         <h2 className="text-[40px] md:text-[64px] text-center font-medium leading-[48px] md:leading-[76.8px] md:w-[520px] mx-auto mt-5 md:mt-0">
@@ -40,6 +41,7 @@ const Page = () => {
           solutions. Take a look at some of our success stories!
         </p>
       </div>
+      <CardSection cards={cardsData} className="px-5 sm:px-24 mt-24 mb-9 " />
       <CardSection cards={cardsData} className="px-5 sm:px-24 mb-24 " />
       {/* Render first set of banners */}
       {banners.map((banner, index) => (
@@ -61,6 +63,7 @@ const Page = () => {
       ))}
       <UserReviews />
       <FAQ />
+      <ContactForm />
     </main>
   );
 };

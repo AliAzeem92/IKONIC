@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const beforeFooter = () => {
+const ContactForm = () => {
   return (
     <div className="bg-[#F4F4F4] py-14 md:py-20 mt-20 px-10 3xl:px-20 ">
       <div className="w-full mx-auto">
@@ -116,4 +116,4 @@ const beforeFooter = () => {
   );
 };
 
-export default beforeFooter;
+export default ContactForm;

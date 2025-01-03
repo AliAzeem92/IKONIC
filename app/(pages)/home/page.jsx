@@ -14,6 +14,7 @@ import FAQ from "@/components/faqsection";
 import Blog from "@/components/blog";
 import { items, newBannerItems } from "@/components/ui/bannerData";
 import ScrollingBanner from "@/components/languageBanner";
+import ContactForm from "@/components/contactForm";
 
 const HomePage = () => {
   const [banners, setBanners] = useState([]);
@@ -35,7 +36,7 @@ const HomePage = () => {
     fetchData();
   }, []);
   return (
-    <main>
+    <main className="Homepage ">
       <Hero />
       <Brands />
       <TalentSection />
@@ -70,6 +71,7 @@ const HomePage = () => {
       <span className="lg:block hidden ">
         <Blog />
       </span>
+      <ContactForm />
     </main>
   );
 };

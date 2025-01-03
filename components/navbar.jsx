@@ -20,6 +20,18 @@ const Navbar = () => {
           <ul className="flex gap-[55px] font-semibold text-lg 3xl:text-4xl ">
             {" "}
             <li>
+              <a href="/casestudieslisting">
+                Case Studies Listing
+                <span className="text-blue-400 ">(Temp)</span>
+              </a>
+            </li>
+            <li>
+              <a href="/casestudiesdetail">
+                Case Studies Detail
+                <span className="text-blue-400 ">(Temp)</span>
+              </a>
+            </li>
+            <li>
               <a href="#">About</a>
             </li>
             <li>
