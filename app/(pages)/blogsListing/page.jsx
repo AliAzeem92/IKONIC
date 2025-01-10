@@ -122,7 +122,7 @@ const blogImg = [
   },
 ];
 
-const page = () => {
+const Page = () => {
   const [banners, setBanners] = useState([]);
   const [newBanners, setNewBanners] = useState([]);
 
@@ -200,4 +200,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

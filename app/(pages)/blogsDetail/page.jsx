@@ -87,8 +87,8 @@ const BlogsDetail = () => {
                 Unlock the Secrets to Hiring Top Talent
               </h4>
               <p className="font-light 3xl:text-3xl w-[70%] text-[lightgray] mb-[10%] ">
-                Don’t Miss This Opportunity! Streamline your hiring process with
-                IKONIC.
+                Don&apos;t Miss This Opportunity! Streamline your hiring process
+                with IKONIC.
               </p>
               <div className="flex justify-center ">
                 <Button
@@ -113,36 +113,36 @@ const BlogsDetail = () => {
               strategies that drive growth. Explore how our solutions create
               impactful results for businesses.
               <br />
-              <br />{" "}
+              <br />
               <b>
-                {" "}
                 The world of web development is constantly evolving, driven by
                 new technologies,
-              </b>{" "}
+              </b>
               shifting user expectations, and emerging digital trends. As we
-              head into 2024, it's crucial for businesses and developers alike
-              to stay ahead of the curve. Top web development trends that will
-              shape the industry in the coming year.
+              head into 2024, it&apos;s crucial for businesses and developers
+              alike to stay ahead of the curve. Top web development trends that
+              will shape the industry in the coming year.
               <br />
-              <br /> Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry.
+              <br />
+              Lorem Ipsum&apos;s simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry&apos;s
+              standard dummy text ever since the 1500s. It has survived not only
+              five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. Lorem Ipsum&apos;s simply dummy
+              text of the printing and typesetting industry.
             </p>
             <br />
-            <p className="border-l-4 border-[#12BDF3] p-4 text-lg 3xl:text-4xl 3xl:leading-relaxed  ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+            <p className="border-l-4 border-[#12BDF3] p-4 text-lg 3xl:text-4xl 3xl:leading-relaxed">
+              Lorem Ipsum&apos;s simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry&apos;s
+              standard dummy text ever since the 1500s.
             </p>
             <br />
             <br />
-            <h2 className="text-3xl font-semibold ">
+            <h2 className="text-3xl font-semibold">
               How to Minimize HTTP Requests:
             </h2>
-            <ul className="space-y-1 list-disc pl-5 ml-3 mt-5 ">
+            <ul className="space-y-1 list-disc pl-5 ml-3 mt-5">
               <li>
                 Combine CSS and JavaScript files Instead of loading multiple
                 separate CSS or JS files, combine them into a single file to
@@ -156,16 +156,17 @@ const BlogsDetail = () => {
               <li>
                 Lazy loading: For images and media that are not immediately
                 visible when a page loads, implement lazy loading, which loads
-                these elements only when they’re needed.
+                these elements only when they&apos;re needed.
               </li>
             </ul>
-            <div className="flex justify-between relative top-16 ">
-              <Image src={Pin} alt="Pin" className="relative right-3 " />
-              <Image src={Menu} alt="Menu" className="relative right-8 " />
+
+            <div className="flex justify-between relative top-16">
+              <Image src={Pin} alt="Pin" className="relative right-3" />
+              <Image src={Menu} alt="Menu" className="relative right-8" />
             </div>
-            <div className="sm:flex bg-[#faefd2] pl-[7%] pr-[5%] py-[5%] rounded-lg ">
+            <div className="sm:flex bg-[#faefd2] pl-[7%] pr-[5%] py-[5%] rounded-lg">
               <div>
-                <h1 className="text-4xl 3xl:text-6xl font-bold w-[80%] pt-8 sm:pt-0 ">
+                <h1 className="text-4xl 3xl:text-6xl font-bold w-[80%] pt-8 sm:pt-0">
                   Are you ready to start your development project?
                 </h1>
                 <HeroHoverButton
@@ -173,12 +174,12 @@ const BlogsDetail = () => {
                   text="Hire a Developer Now"
                 />
               </div>
-              <div className="flex flex-col justify-end bottom-10 sm:right-5 relative mt-16 sm:mt-0 ">
+              <div className="flex flex-col justify-end bottom-10 sm:right-5 relative mt-16 sm:mt-0">
                 <ImageCarousel
                   getImageClasses={(index) =>
                     index === 1
-                      ? "size-20 p-2 3xl:size-36 3xl:p-3 "
-                      : "size-16 p-2 3xl:size-24 3xl:p-3 "
+                      ? "size-20 p-2 3xl:size-36 3xl:p-3"
+                      : "size-16 p-2 3xl:size-24 3xl:p-3"
                   }
                 />
               </div>
@@ -188,6 +189,7 @@ const BlogsDetail = () => {
                 text="Hire a Developer Now"
               />
             </div>
+
             <br />
             <br />
             <h2 className="text-3xl 3xl:text-5xl font-semibold ">
@@ -216,15 +218,15 @@ const BlogsDetail = () => {
               </li>
               <li>
                 Responsive images: Serve different image sizes based on the
-                user’s device, ensuring faster load times on mobile devices by
-                using the srcset attribute in your img tags.
+                user&apos;s device, ensuring faster load times on mobile devices
+                by using the srcset attribute in your img tags.
               </li>
             </ul>
             <br />
             <p className="border-l-4 border-[#12BDF3] p-4 text-lg 3xl:text-4xl 3xl:leading-relaxed  ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              Lorem Ipsum&apos;is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry&apos;s
+              standard dummy text ever since the 1500s.
             </p>
             <br />
             <br />
@@ -287,8 +289,9 @@ const BlogsDetail = () => {
             </h2>
             <ul className="space-y-1 list-disc pl-5 ml-3 mt-5 ">
               <li>
-                Google Lighthouse: Use Google Lighthouse to audit your website’s
-                performance and receive actionable insights for optimization.
+                Google Lighthouse: Use Google Lighthouse to audit your
+                website&apos;s performance and receive actionable insights for
+                optimization.
               </li>
               <li>
                 WebPageTest: This tool offers in-depth performance analysis,
@@ -311,7 +314,7 @@ const BlogsDetail = () => {
               employing the strategies outlined in this post—such as minimizing
               HTTP requests, optimizing images, using caching effectively, and
               reducing third-party scripts—you can significantly enhance your
-              website’s performance. With regular testing and ongoing
+              website&apos;s performance. With regular testing and ongoing
               improvements, you can ensure a seamless, high-quality user
               experience, leading to increased satisfaction and better business
               outcomes.
@@ -373,8 +376,9 @@ const BlogsDetail = () => {
             </h2>
             <ul className="space-y-1 list-disc pl-5 ml-3 mt-5 ">
               <li>
-                Google Lighthouse: Use Google Lighthouse to audit your website’s
-                performance and receive actionable insights for optimization.
+                Google Lighthouse: Use Google Lighthouse to audit your
+                website&apos;s performance and receive actionable insights for
+                optimization.
               </li>
               <li>
                 WebPageTest: This tool offers in-depth performance analysis,
@@ -397,7 +401,7 @@ const BlogsDetail = () => {
               employing the strategies outlined in this post—such as minimizing
               HTTP requests, optimizing images, using caching effectively, and
               reducing third-party scripts—you can significantly enhance your
-              website’s performance. With regular testing and ongoing
+              website&apos;s performance. With regular testing and ongoing
               improvements, you can ensure a seamless, high-quality user
               experience, leading to increased satisfaction and better business
               outcomes.
@@ -433,8 +437,8 @@ const BlogsDetail = () => {
               Unlock the Secrets to Hiring Top Talent
             </h4>
             <p className="font-light 3xl:text-3xl w-[70%] text-[lightgray] mb-[10%] ">
-              Don’t Miss This Opportunity! Streamline your hiring process with
-              IKONIC.
+              Don&apos;t Miss This Opportunity! Streamline your hiring process
+              with IKONIC.
             </p>
             <div className="flex justify-center ">
               <Button
@@ -460,7 +464,6 @@ const BlogsDetail = () => {
       <div
         className="w-full text-center text-3xl sm:text-4xl 3xl:text-7xl font-bold text-white bg-[#266DF0] pt-[177px] pb-[229px] sm:py-[6%] rounded-md space-y-2 "
         style={{
-          // backgroundImage: `url(${bg.src})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundImage: isSmallScreen
