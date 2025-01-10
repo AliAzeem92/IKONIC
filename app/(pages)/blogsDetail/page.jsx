@@ -318,11 +318,15 @@ const BlogsDetail = () => {
             </p>
             <br />
             <br />
-            <div className="flex gap-5 bg-[#02131808] py-[3.5%] pl-[4.5%] pr-[6.5%] rounded-xl ">
+            <div className="flex flex-col sm:flex-row gap-5 bg-[#02131808] py-[3.5%] pl-[4.5%] pr-[6.5%] rounded-xl ">
               <div>
-                <Image src={Book} alt="book" className="3xl:w-96 " />
+                <Image
+                  src={Book}
+                  alt="book"
+                  className="3xl:w-96 sm:bolck hidden "
+                />
               </div>
-              <div className="flex flex-col justify-between py-3 w-[70%] ">
+              <div className="flex flex-col justify-between py-3 sm:w-[70%] ">
                 <div>
                   <h1 className="text-4xl 3xl:text-6xl font-bold  ">
                     Analyze The Best Option For Hiring Developers
@@ -332,7 +336,14 @@ const BlogsDetail = () => {
                     development outsourcing in our latest ebook.
                   </p>
                 </div>
-                <div>
+                <div className="mx-auto relative left-5 ">
+                  <Image
+                    src={Book}
+                    alt="book"
+                    className="3xl:w-96 sm:hidden "
+                  />
+                </div>
+                <div className="mx-auto ">
                   <button className="flex items-center gap-4 bg-black text-white px-12 py-3 rounded-lg ">
                     Download Now
                     <span className="3xl:hidden ">
