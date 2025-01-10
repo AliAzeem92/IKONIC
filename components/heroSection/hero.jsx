@@ -38,11 +38,11 @@ const Hero = () => {
         </div>
         <div className="flex sm:flex-row flex-col sm:gap-5 ">
           <HeroHoverButton
-            className="bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg 3xl:font-semibold "
+            className="bg-[#28C3F4] hover:bg-black hover:text-white sm:my-[42px] my-[10px] transition-all duration-300 shadow-lg 3xl:font-semibold "
             text="Book a consultation call"
           />
           <HeroHoverButton
-            className="hover:bg-black hover:text-white transition-all duration-300 shadow-lg border-black border-2 3xl:font-semibold "
+            className="hover:bg-black hover:text-white transition-all sm:my-[42px] my-[10px] duration-300 shadow-lg border-black border-2 3xl:font-semibold "
             text="View Our Previous Work"
           />
         </div>

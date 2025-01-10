@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Button = ({ title, className = '', ...props }) => {
+const Button = ({ title, className = "", ...props }) => {
   return (
     <div>
       <button

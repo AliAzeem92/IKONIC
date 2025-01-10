@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Img from "@/public/icons/openLink.svg";
 
-const HeroHoverButton = ({ className, text }) => {
+const HeroHoverButton = ({ className, text, textClassName }) => {
   return (
     <div
-      className={`flex items-center justify-center gap-5 px-[41.5px] py-[19.5px] rounded sm:my-[42px] my-[10px] group ${className}`}
+      className={`flex flex-row items-center justify-center gap-5 px-[41.5px] py-[19.5px] rounded group ${className}`}
     >
-      <button className="text-center text-lg md:text-xl 2xl:text-3xl w-full">
+      <button className="text-center text-lg md:text-xl 3xl:text-3xl">
         {text}
       </button>
       <Image

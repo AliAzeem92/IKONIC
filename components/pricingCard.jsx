@@ -49,7 +49,7 @@ export function PricingCard({ data, style }) {
 
         <div className="flex flex-col items-center mt-6">
           <HeroHoverButton
-            className="bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg w-full sm:w-auto"
+            className="sm:my-[42px] my-[10px] bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg w-full sm:w-auto"
             text="Get Our Services"
           />
           <div className="flex gap-5 items-center ">

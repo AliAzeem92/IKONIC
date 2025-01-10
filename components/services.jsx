@@ -24,7 +24,7 @@ const Services = () => {
           </div>
           <div className="flex sm:flex-row flex-col justify-center items-center ">
             <HeroHoverButton
-              className="bg-[#28C3F4] hover:bg-black hover:text-white transition-all duration-300 shadow-lg w-full sm:w-auto"
+              className="bg-[#28C3F4] hover:bg-black hover:text-white sm:my-[42px] my-[10px] transition-all duration-300 shadow-lg w-full sm:w-auto"
               text="Get Our Services"
             />
           </div>
