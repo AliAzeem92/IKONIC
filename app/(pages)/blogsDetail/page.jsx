@@ -41,7 +41,7 @@ const BlogsDetail = () => {
           <h6 className="mx-auto sm:mx-0 text-base 3xl:text-4xl font-normal 3xl:font-semibold bg-[#ebecec] text-center w-fit px-[20px] py-[6px] 3xl:px-[40px] 3xl:py-[8px] rounded-full mt-[5%] ">
             Digital Marketing, SEO
           </h6>
-          <h1 className="text-center sm:text-left text-3xl sm:text-5xl 3xl:text-7xl 3xl:w-[70%] font-semibold mt-[3%] ">
+          <h1 className="text-center sm:text-left text-3xl sm:text-5xl 3xl:text-5xl 4xl:text-7xl 3xl:w-[70%] font-semibold mt-[3%] ">
             Optimizing Code Efficiency and Performance
           </h1>
           <div className="flex items-center text-center mt-[5%] gap-3 3xl:gap-5 text-xs sm:text-base 3xl:text-3xl ">
@@ -166,13 +166,15 @@ const BlogsDetail = () => {
             </div>
             <div className="sm:flex bg-[#faefd2] pl-[7%] pr-[5%] py-[5%] rounded-lg">
               <div>
-                <h1 className="text-4xl 3xl:text-6xl font-bold w-[80%] pt-8 sm:pt-0">
+                <h1 className="text-4xl 3xl:text-6xl font-bold w-[90%] pt-8 sm:pt-0">
                   Are you ready to start your development project?
                 </h1>
-                <HeroHoverButton
-                  className="sm:block hidden w-fit sm:mt-[40px] my-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300 shadow-lg 3xl:font-semibold"
-                  text="Hire a Developer Now"
-                />
+                <span className="sm:block hidden">
+                  <HeroHoverButton
+                    className="w-fit sm:mt-[40px] my-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300 shadow-lg 3xl:font-semibold"
+                    text="Hire a Developer Now"
+                  />
+                </span>
               </div>
               <div className="flex flex-col justify-end bottom-10 sm:right-5 relative mt-16 sm:mt-0">
                 <ImageCarousel
@@ -326,7 +328,7 @@ const BlogsDetail = () => {
                 <Image
                   src={Book}
                   alt="book"
-                  className="3xl:w-96 sm:bolck hidden "
+                  className="3xl:w-96 sm:block hidden "
                 />
               </div>
               <div className="flex flex-col justify-between py-3 sm:w-[70%] ">

@@ -46,7 +46,7 @@ const HomePage = () => {
       <SkilledPortfolio />
       <Choose />
       <Pricing />
-      <div className="relative bottom-8 ">
+      <div className="relative bottom-20 3xl:bottom-24 overflow-hidden py-[3%] ">
         {/* Render first set of banners */}
         {banners.map((banner, index) => (
           <ScrollingBanner

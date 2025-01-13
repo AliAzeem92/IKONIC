@@ -2,6 +2,7 @@ import Image from "next/image";
 import whatsapp from "@/public/whatsapp.svg";
 import telegram from "@/public/telegram.svg";
 import arrowup from "@/public/arrow-up.svg";
+import Logo from "@/public/iKonic-logo.svg";
 
 const Footer = () => {
   return (
@@ -9,16 +10,10 @@ const Footer = () => {
       <div className="bg-[#021318] px-10 3xl:px-20 ">
         <div className="w-full mx-auto">
           <div className="flex flex-col md:flex-row gap-10 justify-between items-center md:border-b md:border-[#FFFFFF1A] py-10 md:py-20">
-            <div className="w-full md:w-1/2 p-5 md:p-0">
-              <Image
-                src="/iKonic-logo.svg"
-                alt="iKoninc Logo"
-                width={100000000}
-                height={100000000}
-                className="w-[55%] md:w-[70%]"
-              />
+            <div className="">
+              <Image src={Logo} alt="iKoninc Logo" className="" />
             </div>
-            <div className="w-full md:w-1/2 p-5 md:p-0">
+            <div className="w-full md:w-[51%] p-5 md:p-0">
               <h2 className="text-4xl 3xl:text-6xl font-medium text-white capitalize">
                 More than just another agency
                 <span className="text-4xl 3xl:text-6xl font-bold text-[#12BDF3] capitalize md:block">
