@@ -16,29 +16,30 @@ const Navbar = () => {
         <div className="sm:hidden ">
           <DropDown />
         </div>
-        <div className="sm:flex gap-[84px] items-center hidden ">
-          <ul className="flex gap-[55px] font-semibold text-lg 3xl:text-4xl ">
-            {" "}
-            <li>
-              <a className="text-blue-400 " href="/casestudieslisting">
-                CS Listing
-              </a>
-            </li>
-            <li>
-              <a className="text-blue-400 " href="/casestudiesdetail">
-                CS Detail
-              </a>
-            </li>
-            <li>
-              <a className="text-blue-400 " href="/blogsListing">
-                Blogs Listing
-              </a>
-            </li>
-            <li>
-              <a className="text-blue-400 " href="/blogsDetail">
-                Blogs Detail
-              </a>
-            </li>
+        <div className="sm:flex gap-[60px] lg:gap-[84px] items-center hidden ">
+          <ul className="flex gap-[45px] lg:gap-[55px] font-semibold text-lg 3xl:text-4xl items-center ">
+            <div className="flex gap-2 font-semibold text-xs 3xl:text-lg ">
+              <li>
+                <a className="text-blue-400 " href="/casestudieslisting">
+                  CS Listing
+                </a>
+              </li>
+              <li>
+                <a className="text-blue-400 " href="/casestudiesdetail">
+                  CS Detail
+                </a>
+              </li>
+              <li>
+                <a className="text-blue-400 " href="/blogsListing">
+                  B Listing
+                </a>
+              </li>
+              <li>
+                <a className="text-blue-400 " href="/blogsDetail">
+                  B Detail
+                </a>
+              </li>
+            </div>
             <li>
               <a href="#">About</a>
             </li>
