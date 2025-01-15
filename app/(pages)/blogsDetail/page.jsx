@@ -41,7 +41,7 @@ const BlogsDetail = () => {
           <h6 className="mx-auto sm:mx-0 text-base 3xl:text-4xl font-normal 3xl:font-semibold bg-[#ebecec] text-center w-fit px-[20px] py-[6px] 3xl:px-[40px] 3xl:py-[8px] rounded-full mt-[5%] ">
             Digital Marketing, SEO
           </h6>
-          <h1 className="text-center sm:text-left text-3xl sm:text-5xl 3xl:text-5xl 4xl:text-7xl 3xl:w-[70%] font-semibold mt-[3%] ">
+          <h1 className="text-center sm:text-left text-3xl sm:text-5xl 3xl:text-5xl 4xl:text-7xl font-semibold mt-[3%] ">
             Optimizing Code Efficiency and Performance
           </h1>
           <div className="flex items-center text-center mt-[5%] gap-3 3xl:gap-5 text-xs sm:text-base 3xl:text-3xl ">
