@@ -29,7 +29,7 @@ export function Navigation() {
         </DropdownMenuTrigger>
         <DropdownMenuContent
           align="end"
-          className="xxxs:w-[250px] xxs:w-[300px] xs:w-[350px] bg-gradient-to-bl from-blue-300 via-blue-400 to-purple-500 border-2 border-white"
+          className="xxxs:w-[300px] xxs:w-[350px] bg-gradient-to-bl from-blue-300 via-blue-400 to-purple-500 border-2 border-white"
         >
           {menuItems.map((item) => (
             <DropdownMenuItem key={item.href} asChild>
