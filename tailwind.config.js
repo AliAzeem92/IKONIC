@@ -32,6 +32,8 @@ module.exports = {
       },
     },
     screens: {
+      xxxs: "320px",
+      xxs: "375px",
       xs: "480px",
       sm: "640px",
       md: "768px",
@@ -39,7 +41,7 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
       "3xl": "1920px",
-      "4xl": "2256px",
+      "4xl": "2356px",
     },
   },
   plugins: [addVariablesForColors],

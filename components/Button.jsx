@@ -28,9 +28,9 @@ export default function Home({ title, className = "", ...props }) {
   };
 
   return (
-    <div className="min-h-scree flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="flex flex-col items-cente ">
       <button
-        className={`px-[31.5px] py-[16px] text-white rounded-lg font-semibold flex items-end gap-1 ${className}`}
+        className={`px-[16.5px] py-[8px] lg:px-[31.5px] lg:py-[16px] text-xl sm:text-xs lg:text-lg 3xl:text-4xl text-white rounded-lg font-semibold flex items-end gap-1 ${className}`}
         {...props}
         onClick={() => setOpen(true)}
       >
@@ -38,20 +38,24 @@ export default function Home({ title, className = "", ...props }) {
         <div className="loader"></div>
       </button>
 
+      {/* Pop-Up */}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent>
-          <div className="px-[76.88px] ">
-            <h6 className="mx-auto text-base 3xl:text-4xl font-normal 3xl:font-semibold bg-[#ebecec] text-center w-fit px-[20px] py-[6px] 3xl:px-[40px] 3xl:py-[8px] rounded-full mt-[5%] ">
-              Let&apos;s Scale your team smarter 🥳
+          <div className="px-[12.5%] py-[3%] ">
+            <h6 className="mx-auto text-sm sm:text-base 3xl:text-3xl 4xl:text-4xl font-normal bg-[#ebecec] text-center w-fit px-[20px] py-[6px] 3xl:px-[40px] 3xl:py-[8px] rounded-full mt-[5%] ">
+              <b>Let&apos;s Scale</b> your team smarter 🥳
             </h6>
             <DialogHeader>
-              <DialogTitle className="text-center text-4xl 3xl:text-7xl font-bold 3xl:font-semibold 3xl:pt-3 ">
+              <DialogTitle className="text-center capitalize text-2xl sm:text-4xl 3xl:text-6xl 4xl:text-7xl font-semibold 3xl:font-semibold 3xl:pt-3 ">
                 Ready to start your Dev Subscription?
               </DialogTitle>
             </DialogHeader>
-            <form onSubmit={handleSubmit} className="space-y-4 py- text-xl ">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="3xl:text-3xl">
+            <form onSubmit={handleSubmit} className="space-y-4 text-xl ">
+              <div className="space-y-2.5 3xl:space-y-3 relative bottom-3  ">
+                <Label
+                  htmlFor="name"
+                  className="3xl:text-3xl ml-5 3xl:ml-10 px-2 relative top-5 3xl:top-7 bg-white "
+                >
                   Name
                 </Label>
                 <Input
@@ -62,11 +66,14 @@ export default function Home({ title, className = "", ...props }) {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   required
-                  className="3xl:placeholder:text-lg 3xl:text-xl"
+                  className=""
                 />
               </div>
-              <div className="space-y-2">
-                <Label htmlFor="email" className="3xl:text-3xl">
+              <div className="space-y-2.5 3xl:space-y-3 relative bottom-7  ">
+                <Label
+                  htmlFor="email"
+                  className="3xl:text-3xl ml-5 3xl:ml-10 px-2 relative top-5 3xl:top-7 bg-white "
+                >
                   Email
                 </Label>
                 <Input
@@ -78,12 +85,12 @@ export default function Home({ title, className = "", ...props }) {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   required
-                  className="3xl:placeholder:text-lg 3xl:text-xl"
+                  className=""
                 />
               </div>
               <Button
                 type="submit"
-                className="w-full px-4 py-2 3xl:text-3xl text-white bg-primary rounded-lg hover:bg-primary/90 bg-[#021318] hover:bg-[#021318f0] "
+                className="w-full px-4 py-2 3xl:py-8 3xl:text-3xl text-white bg-primary rounded-lg hover:bg-primary/90 bg-[#021318] hover:bg-[#021318f0] "
               >
                 Get a Quote Today!
               </Button>
